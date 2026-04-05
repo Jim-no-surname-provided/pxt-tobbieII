@@ -1,0 +1,17 @@
+{
+  "TobbieII|block": "Tobbie II",
+  "TobbieII.Read_RBlock|block": "Считать правый ИК-датчик (0~1024)",
+  "TobbieII.Read_LBlock|block": "Считать левый ИК-датчик (0~1024)",
+  "TobbieII.RBlock|block": "Правый ИК-датчик выше %thresholdR|",
+  "TobbieII.LBlock|block": "Левый ИК-датчик выше %thresholdL|",
+  "TobbieII.forward|block": "Двигаться вперёд",
+  "TobbieII.backward|block": "Двигаться назад",
+  "TobbieII.stopwalk|block": "Остановиться",
+  "TobbieII.rightward|block": "Повернуть направо",
+  "TobbieII.leftward|block": "Повернуть налево",
+  "TobbieII.stopturn|block": "Остановить поворот",
+  "TobbieII.vibrate|block": "Топать %time| раз",
+  "TobbieII.shake_head|block": "Качать головой %time| раз",
+  "TobbieII.dance|block": "Танцевать %time| раз",
+  "TobbieII.drawface|block": "Показать лицо %RX_Data| (только приложение)"
+}

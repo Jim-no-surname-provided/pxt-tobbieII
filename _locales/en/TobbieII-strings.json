@@ -1,0 +1,17 @@
+{
+  "TobbieII|block": "Tobbie II",
+  "TobbieII.Read_RBlock|block": "Read right IR sensor (0~1024)",
+  "TobbieII.Read_LBlock|block": "Read left IR sensor (0~1024)",
+  "TobbieII.RBlock|block": "Right IR sensor above %thresholdR|",
+  "TobbieII.LBlock|block": "Left IR sensor above %thresholdL|",
+  "TobbieII.forward|block": "Move forward",
+  "TobbieII.backward|block": "Move backward",
+  "TobbieII.stopwalk|block": "Stop moving",
+  "TobbieII.rightward|block": "Turn right",
+  "TobbieII.leftward|block": "Turn left",
+  "TobbieII.stopturn|block": "Stop turning",
+  "TobbieII.vibrate|block": "Stamp %time| times",
+  "TobbieII.shake_head|block": "Shake head %time| times",
+  "TobbieII.dance|block": "Dance %time| times",
+  "TobbieII.drawface|block": "Show face %RX_Data| (app only)"
+}

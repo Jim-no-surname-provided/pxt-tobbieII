@@ -1,0 +1,17 @@
+{
+  "TobbieII|block": "Tobbie II",
+  "TobbieII.Read_RBlock|block": "Læs højre IR-sensor (0~1024)",
+  "TobbieII.Read_LBlock|block": "Læs venstre IR-sensor (0~1024)",
+  "TobbieII.RBlock|block": "Højre IR-sensor over %thresholdR|",
+  "TobbieII.LBlock|block": "Venstre IR-sensor over %thresholdL|",
+  "TobbieII.forward|block": "Gå frem",
+  "TobbieII.backward|block": "Gå tilbage",
+  "TobbieII.stopwalk|block": "Stop bevægelse",
+  "TobbieII.rightward|block": "Drej til højre",
+  "TobbieII.leftward|block": "Drej til venstre",
+  "TobbieII.stopturn|block": "Stop rotation",
+  "TobbieII.vibrate|block": "Tramp %time| gange",
+  "TobbieII.shake_head|block": "Ryst hovedet %time| gange",
+  "TobbieII.dance|block": "Dans %time| gange",
+  "TobbieII.drawface|block": "Vis ansigt %RX_Data| (kun app)"
+}
