@@ -1,6 +1,6 @@
 {
     "name": "TobbieII",
-    "version": "2.0.3",
+    "version": "2.0.4",
     "description": "Extension for Tobbie-II",
     "license": "MIT",
     "dependencies": {
@@ -11,7 +11,8 @@
         "README.md",
         "main.ts",
         "_locales/zh/TobbieII-strings.json",
-        "_locales/de/TobbieII-strings.json"
+        "_locales/de/TobbieII-strings.json",
+        "_locales/es/TobbieII-strings.json"
     ],
     "public": true,
     "targetVersions": {

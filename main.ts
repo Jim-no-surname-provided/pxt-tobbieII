@@ -1,4 +1,5 @@
 //% weight=0 color=#FF8B27 icon="\uf1b9" block="TobbieII"
+
 //uf1b9
 namespace TobbieII {
     let ADL_R: number = 0;
@@ -14,7 +15,24 @@ namespace TobbieII {
     let PX: number = 0;
     let PY: number = 0;
     let Force: number = 10;
+
+    const IR_LED_PIN = DigitalPin.P12;
     
+    const IR_RIGHT_PIN = AnalogPin.P1
+    const IR_LEFT_PIN = AnalogPin.P2
+    
+    // These are positive and negative sides for the same motor, and sending 1 to one, you have to send 0 to the other.
+    const FORWARD_PIN = DigitalPin.P13;
+    const BACKWARD_PIN = DigitalPin.P14;
+    
+    // These are positive and negative sides for the same motor, and sending 1 to one, you have to send 0 to the other.
+    const TURN_LEFT_PIN = DigitalPin.P15;
+    const TURN_RIGHT_PIN = DigitalPin.P16;
+    
+    // This pin is undocumented, I have no idea what it is -Jim no surname provided
+    const P8 = DigitalPin.P8;
+
+
    function IR_sensorL(irdataL: number) {   //此為中斷觸發方塊
        control.inBackground(() => {
            let flag = false
@@ -76,24 +94,24 @@ namespace TobbieII {
     export function Read_RBlock() :number {
         basic.pause(100)
         ADL_R = pins.analogReadPin(AnalogPin.P2)
-        pins.digitalWritePin(DigitalPin.P12, 1)
+        pins.digitalWritePin(IR_LED_PIN, 1)
         control.waitMicros(250)
         ADH_R = pins.analogReadPin(AnalogPin.P2)
-        pins.digitalWritePin(DigitalPin.P12, 0)
-        if (pins.digitalReadPin(DigitalPin.P8) == 1) Read_RIR = ADH_R - ADL_R;
+        pins.digitalWritePin(IR_LED_PIN, 0)
+        if (pins.digitalReadPin(P8) == 1) Read_RIR = ADH_R - ADL_R;
         return (Read_RIR)     
     }
     /** Read the value sensed by the left side of the infrared sensor.
     */
-    //% blockId="Read_LBolck" block="get left IR data(trtuen 0~1024)"
+    //% blockId="Read_LBolck" block="get left IR data(return 0~1024)"
     //% blockGap=15 weight=60                 //與下一個方塊的間隙及排重
     export function Read_LBlock() :number {
         basic.pause(100)
         ADL_L = pins.analogReadPin(AnalogPin.P1)
-        pins.digitalWritePin(DigitalPin.P12, 1)
+        pins.digitalWritePin(IR_LED_PIN, 1)
         control.waitMicros(250)
         ADH_L = pins.analogReadPin(AnalogPin.P1)
-        pins.digitalWritePin(DigitalPin.P12, 0)
+        pins.digitalWritePin(IR_LED_PIN, 0)
 
         Read_LIR = ADH_L - ADL_L;
         return(Read_LIR)       
@@ -108,12 +126,12 @@ namespace TobbieII {
     export function RBlock(thresholdR: number = 512 ) :boolean {
         basic.pause(100)
         ADL_R = pins.analogReadPin(AnalogPin.P2)
-        pins.digitalWritePin(DigitalPin.P12, 1)
+        pins.digitalWritePin(IR_LED_PIN, 1)
         control.waitMicros(250)
         ADH_R = pins.analogReadPin(AnalogPin.P2)
-        pins.digitalWritePin(DigitalPin.P12, 0)
+        pins.digitalWritePin(IR_LED_PIN, 0)
 
-        if (((ADH_R-ADL_R) > thresholdR) && (pins.digitalReadPin(DigitalPin.P8) == 1)) { 
+        if (((ADH_R-ADL_R) > thresholdR) && (pins.digitalReadPin(P8) == 1)) { 
              //basic.showIcon(IconNames.House)
             return(true)
         } else {
@@ -131,12 +149,12 @@ namespace TobbieII {
     export function LBlock(thresholdL: number=512 ) :boolean {
         basic.pause(100)
         ADL_L = pins.analogReadPin(AnalogPin.P1)
-        pins.digitalWritePin(DigitalPin.P12, 1)
+        pins.digitalWritePin(IR_LED_PIN, 1)
         control.waitMicros(250)
         ADH_L = 0
-        if(pins.digitalReadPin(DigitalPin.P8) == 1){
+        if(pins.digitalReadPin(P8) == 1){
             ADH_L = pins.analogReadPin(AnalogPin.P1)
-            pins.digitalWritePin(DigitalPin.P12, 0)
+            pins.digitalWritePin(IR_LED_PIN, 0)
         }
         if ((ADH_L-ADL_L) > thresholdL) {//512) { 
              //basic.showIcon(IconNames.House)
@@ -154,11 +172,11 @@ namespace TobbieII {
     //export function IRblock() {
     //    ADL_L = pins.analogReadPin(AnalogPin.P1)
     //    ADL_R = pins.analogReadPin(AnalogPin.P2)
-    //    pins.digitalWritePin(DigitalPin.P12, 1)
+    //    pins.digitalWritePin(IR_LED_PIN, 1)
     //    control.waitMicros(250)
     //    ADH_L = pins.analogReadPin(AnalogPin.P1)
     //    ADH_R = pins.analogReadPin(AnalogPin.P2)
-    //    pins.digitalWritePin(DigitalPin.P12, 0)
+    //    pins.digitalWritePin(IR_LED_PIN, 0)
     
     //    if ((ADH_L-ADL_L) > 512) { 
             //basic.showIcon(IconNames.House)
@@ -188,9 +206,9 @@ namespace TobbieII {
     //% blockId="forward" block="Tobbie-II walking forward"
     //% blockGap=3 weight=35
     export function forward() {
-        if (pins.digitalReadPin(DigitalPin.P8) == 1) {
-            pins.digitalWritePin(DigitalPin.P13, 1)
-            pins.digitalWritePin(DigitalPin.P14, 0)
+        if (pins.digitalReadPin(P8) == 1) {
+            pins.digitalWritePin(FORWARD_PIN, 1)
+            pins.digitalWritePin(BACKWARD_PIN, 0)
         }
     }
     /**
@@ -200,11 +218,13 @@ namespace TobbieII {
     //% blockGap=3  weight=34
     export function backward() {
         if (Force != 0) {
-            pins.digitalWritePin(DigitalPin.P13, 0)
-            pins.digitalWritePin(DigitalPin.P14, 1)
+            pins.digitalWritePin(FORWARD_PIN, 0)
+            pins.digitalWritePin(BACKWARD_PIN, 1)
             Force = Force - 1;
         }
-        if (pins.digitalReadPin(DigitalPin.P8) == 1) {Force=10} 
+        if (pins.digitalReadPin(P8) == 1) {
+            Force=10
+        } 
 
     }
     /**
@@ -213,8 +233,8 @@ namespace TobbieII {
     //% blockId="stopwalk" block="Tobbie-II stop walking"
     //% blockGap=10 weight=33
     export function stopwalk() {
-        pins.digitalWritePin(DigitalPin.P13, 0)
-        pins.digitalWritePin(DigitalPin.P14, 0)
+        pins.digitalWritePin(FORWARD_PIN, 0)
+        pins.digitalWritePin(BACKWARD_PIN, 0)
     }
     /**
     *Tobbie-II rotates to the right.
@@ -222,8 +242,8 @@ namespace TobbieII {
     //% blockId="rightward" block="Tobbie-II turns right"
     //% blockGap=3  weight=32
     export function rightward() {
-        pins.digitalWritePin(DigitalPin.P15, 0)
-        pins.digitalWritePin(DigitalPin.P16, 1)
+        pins.digitalWritePin(TURN_LEFT_PIN, 0)
+        pins.digitalWritePin(TURN_RIGHT_PIN, 1)
         Motor_L=false
         Motor_R=true
     }
@@ -233,8 +253,8 @@ namespace TobbieII {
     //% blockId="leftward" block="Tobbie-II turns left"
     //% blockGap=3  weight=31
     export function leftward() {
-       pins.digitalWritePin(DigitalPin.P15, 1)
-        pins.digitalWritePin(DigitalPin.P16, 0)
+       pins.digitalWritePin(TURN_LEFT_PIN, 1)
+        pins.digitalWritePin(TURN_RIGHT_PIN, 0)
         Motor_L=true
         Motor_R=false
     }
@@ -246,17 +266,17 @@ namespace TobbieII {
     export function stopturn() {
         if (Motor_L || Motor_R) {
             if (Motor_R) { 
-                pins.digitalWritePin(DigitalPin.P15, 1)
-                pins.digitalWritePin(DigitalPin.P16, 0)
+                pins.digitalWritePin(TURN_LEFT_PIN, 1)
+                pins.digitalWritePin(TURN_RIGHT_PIN, 0)
             } else {
-                pins.digitalWritePin(DigitalPin.P15, 0)
-                pins.digitalWritePin(DigitalPin.P16, 1)
+                pins.digitalWritePin(TURN_LEFT_PIN, 0)
+                pins.digitalWritePin(TURN_RIGHT_PIN, 1)
             }
             basic.pause(50)
          }
-         if (pins.digitalReadPin(DigitalPin.P8) == 1){
-        pins.digitalWritePin(DigitalPin.P15, 0)
-        pins.digitalWritePin(DigitalPin.P16, 0)
+         if (pins.digitalReadPin(P8) == 1){
+        pins.digitalWritePin(TURN_LEFT_PIN, 0)
+        pins.digitalWritePin(TURN_RIGHT_PIN, 0)
         Motor_L=false
         Motor_R=false }
     }
@@ -271,15 +291,15 @@ namespace TobbieII {
     //% advanced=true
     export function vibrate(time:number) :void{
         for (let i = 0; i < time; i++){
-            pins.digitalWritePin(DigitalPin.P13, 1)  //向前
-            pins.digitalWritePin(DigitalPin.P14, 0)
+            pins.digitalWritePin(FORWARD_PIN, 1)  //向前
+            pins.digitalWritePin(BACKWARD_PIN, 0)
             basic.pause(150)
-            pins.digitalWritePin(DigitalPin.P13, 0)  //向後
-            pins.digitalWritePin(DigitalPin.P14, 1)
+            pins.digitalWritePin(FORWARD_PIN, 0)  //向後
+            pins.digitalWritePin(BACKWARD_PIN, 1)
             basic.pause(150)
         }
-        pins.digitalWritePin(DigitalPin.P13, 0)      //停止
-        pins.digitalWritePin(DigitalPin.P14, 0)
+        pins.digitalWritePin(FORWARD_PIN, 0)      //停止
+        pins.digitalWritePin(BACKWARD_PIN, 0)
     }   
  /**
     *Tobbie-II shakes his head for a certain number of times.
@@ -291,15 +311,15 @@ namespace TobbieII {
     //% advanced=true
     export function shake_head(time:number) :void{
         for (let i = 0; i < time; i++){
-            pins.digitalWritePin(DigitalPin.P15, 1)  //左轉
-            pins.digitalWritePin(DigitalPin.P16, 0)
+            pins.digitalWritePin(TURN_LEFT_PIN, 1)  //左轉
+            pins.digitalWritePin(TURN_RIGHT_PIN, 0)
             basic.pause(250)
-            pins.digitalWritePin(DigitalPin.P15, 0)  //右轉
-            pins.digitalWritePin(DigitalPin.P16, 1)
+            pins.digitalWritePin(TURN_LEFT_PIN, 0)  //右轉
+            pins.digitalWritePin(TURN_RIGHT_PIN, 1)
             basic.pause(250)
         }
-        pins.digitalWritePin(DigitalPin.P15, 0)      //停止行走
-        pins.digitalWritePin(DigitalPin.P16, 0)
+        pins.digitalWritePin(TURN_LEFT_PIN, 0)      //停止行走
+        pins.digitalWritePin(TURN_RIGHT_PIN, 0)
     }      
 /**
     *Tobbie-II repeats the dance for for a certain number of times.
@@ -311,21 +331,21 @@ namespace TobbieII {
     //% advanced=true
     export function dance(time:number) :void{
         for (let i = 0; i < time; i++){
-            pins.digitalWritePin(DigitalPin.P13, 0)  //向後
-            pins.digitalWritePin(DigitalPin.P14, 1)
-            pins.digitalWritePin(DigitalPin.P15, 0)  //右轉
-            pins.digitalWritePin(DigitalPin.P16, 1)
+            pins.digitalWritePin(FORWARD_PIN, 0)  //向後
+            pins.digitalWritePin(BACKWARD_PIN, 1)
+            pins.digitalWritePin(TURN_LEFT_PIN, 0)  //右轉
+            pins.digitalWritePin(TURN_RIGHT_PIN, 1)
             basic.pause(250)
-            pins.digitalWritePin(DigitalPin.P13, 1)  //向前
-            pins.digitalWritePin(DigitalPin.P14, 0)
-            pins.digitalWritePin(DigitalPin.P15, 1)  //左轉
-            pins.digitalWritePin(DigitalPin.P16, 0)
+            pins.digitalWritePin(FORWARD_PIN, 1)  //向前
+            pins.digitalWritePin(BACKWARD_PIN, 0)
+            pins.digitalWritePin(TURN_LEFT_PIN, 1)  //左轉
+            pins.digitalWritePin(TURN_RIGHT_PIN, 0)
             basic.pause(250)
         }
-        pins.digitalWritePin(DigitalPin.P13, 0)
-        pins.digitalWritePin(DigitalPin.P14, 0)
-        pins.digitalWritePin(DigitalPin.P15, 0)
-        pins.digitalWritePin(DigitalPin.P16, 0)
+        pins.digitalWritePin(FORWARD_PIN, 0)
+        pins.digitalWritePin(BACKWARD_PIN, 0)
+        pins.digitalWritePin(TURN_LEFT_PIN, 0)
+        pins.digitalWritePin(TURN_RIGHT_PIN, 0)
     } 
 /**
     *Tobbie II shows his mood on the face (APP only).
