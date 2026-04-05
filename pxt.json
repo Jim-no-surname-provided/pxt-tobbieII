@@ -4,8 +4,7 @@
     "description": "Extension for Tobbie-II",
     "license": "MIT",
     "dependencies": {
-        "core": "*",
-        "microphone": "*"
+        "core": "*"
     },
     "files": [
         "README.md",
