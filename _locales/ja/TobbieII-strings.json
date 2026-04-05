@@ -1,0 +1,17 @@
+{
+  "TobbieII|block": "トビーII",
+  "TobbieII.Read_RBlock|block": "右赤外線センサーを読む (0~1024)",
+  "TobbieII.Read_LBlock|block": "左赤外線センサーを読む (0~1024)",
+  "TobbieII.RBlock|block": "右赤外線センサーが %thresholdR| を超える",
+  "TobbieII.LBlock|block": "左赤外線センサーが %thresholdL| を超える",
+  "TobbieII.forward|block": "前に進む",
+  "TobbieII.backward|block": "後ろに進む",
+  "TobbieII.stopwalk|block": "停止する",
+  "TobbieII.rightward|block": "右に回転",
+  "TobbieII.leftward|block": "左に回転",
+  "TobbieII.stopturn|block": "回転を止める",
+  "TobbieII.vibrate|block": "%time| 回足踏み",
+  "TobbieII.shake_head|block": "%time| 回頭を振る",
+  "TobbieII.dance|block": "%time| 回ダンス",
+  "TobbieII.drawface|block": "表情を表示 %RX_Data| (アプリのみ)"
+}

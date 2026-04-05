@@ -1,0 +1,17 @@
+{
+  "TobbieII|block": "Tobbie II",
+  "TobbieII.Read_RBlock|block": "Číst pravý IR senzor (0~1024)",
+  "TobbieII.Read_LBlock|block": "Číst levý IR senzor (0~1024)",
+  "TobbieII.RBlock|block": "Pravý IR senzor nad %thresholdR|",
+  "TobbieII.LBlock|block": "Levý IR senzor nad %thresholdL|",
+  "TobbieII.forward|block": "Jít dopředu",
+  "TobbieII.backward|block": "Jít dozadu",
+  "TobbieII.stopwalk|block": "Zastavit pohyb",
+  "TobbieII.rightward|block": "Otočit doprava",
+  "TobbieII.leftward|block": "Otočit doleva",
+  "TobbieII.stopturn|block": "Zastavit otáčení",
+  "TobbieII.vibrate|block": "Dupat %time| krát",
+  "TobbieII.shake_head|block": "Třást hlavou %time| krát",
+  "TobbieII.dance|block": "Tancovat %time| krát",
+  "TobbieII.drawface|block": "Zobrazit výraz %RX_Data| (pouze aplikace)"
+}

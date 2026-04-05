@@ -1,0 +1,17 @@
+{
+  "TobbieII|block": "Тобби II",
+  "TobbieII.Read_RBlock|block": "Очитај десни IR сензор (0~1024)",
+  "TobbieII.Read_LBlock|block": "Очитај леви IR сензор (0~1024)",
+  "TobbieII.RBlock|block": "Десни IR сензор изнад %thresholdR|",
+  "TobbieII.LBlock|block": "Леви IR сензор изнад %thresholdL|",
+  "TobbieII.forward|block": "Крени напред",
+  "TobbieII.backward|block": "Крени назад",
+  "TobbieII.stopwalk|block": "Заустави се",
+  "TobbieII.rightward|block": "Скрени десно",
+  "TobbieII.leftward|block": "Скрени лево",
+  "TobbieII.stopturn|block": "Заустави окретање",
+  "TobbieII.vibrate|block": "Тупни %time| пута",
+  "TobbieII.shake_head|block": "Помери главу %time| пута",
+  "TobbieII.dance|block": "Плеши %time| пута",
+  "TobbieII.drawface|block": "Прикажи лице %RX_Data| (само апликација)"
+}

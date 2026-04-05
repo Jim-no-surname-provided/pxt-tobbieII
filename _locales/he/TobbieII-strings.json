@@ -1,0 +1,17 @@
+{
+  "TobbieII|block": "טובי II",
+  "TobbieII.Read_RBlock|block": "קרא חיישן IR ימני (0~1024)",
+  "TobbieII.Read_LBlock|block": "קרא חיישן IR שמאלי (0~1024)",
+  "TobbieII.RBlock|block": "האם חיישן IR ימני מעל %thresholdR|",
+  "TobbieII.LBlock|block": "האם חיישן IR שמאלי מעל %thresholdL|",
+  "TobbieII.forward|block": "לך קדימה",
+  "TobbieII.backward|block": "לך אחורה",
+  "TobbieII.stopwalk|block": "עצור",
+  "TobbieII.rightward|block": "פנה ימינה",
+  "TobbieII.leftward|block": "פנה שמאלה",
+  "TobbieII.stopturn|block": "עצור סיבוב",
+  "TobbieII.vibrate|block": "דרוך %time| פעמים",
+  "TobbieII.shake_head|block": "נער ראש %time| פעמים",
+  "TobbieII.dance|block": "רקוד %time| פעמים",
+  "TobbieII.drawface|block": "הצג הבעה %RX_Data| (רק באפליקציה)"
+}

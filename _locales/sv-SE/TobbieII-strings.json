@@ -1,0 +1,17 @@
+{
+  "TobbieII|block": "Tobbie II",
+  "TobbieII.Read_RBlock|block": "Läs höger IR-sensor (0~1024)",
+  "TobbieII.Read_LBlock|block": "Läs vänster IR-sensor (0~1024)",
+  "TobbieII.RBlock|block": "Höger IR-sensor över %thresholdR|",
+  "TobbieII.LBlock|block": "Vänster IR-sensor över %thresholdL|",
+  "TobbieII.forward|block": "Gå framåt",
+  "TobbieII.backward|block": "Gå bakåt",
+  "TobbieII.stopwalk|block": "Stanna",
+  "TobbieII.rightward|block": "Sväng höger",
+  "TobbieII.leftward|block": "Sväng vänster",
+  "TobbieII.stopturn|block": "Stoppa rotation",
+  "TobbieII.vibrate|block": "Stampa %time| gånger",
+  "TobbieII.shake_head|block": "Skaka på huvudet %time| gånger",
+  "TobbieII.dance|block": "Dansa %time| gånger",
+  "TobbieII.drawface|block": "Visa ansikte %RX_Data| (endast app)"
+}
