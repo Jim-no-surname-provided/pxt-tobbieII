@@ -8,7 +8,7 @@ The Tobbie-II robot is a STEAMP DIY kit for BBC micro:bit. The Tobbie-II extends
 basic.forever(function () {
     TobbieII.forward()
     if (TobbieII.RBlock(512)) {
-        TobbieII.stopWalk()
+        TobbieII.stopwalk()
     }
 })
 ```
@@ -22,5 +22,5 @@ MIT
 (The metadata above is needed for package search.)
 
 
-Product information-->https://science.prokits.com.tw/
+Product information-->https://www.prokits.com.tw/
 
