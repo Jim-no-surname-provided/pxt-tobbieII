@@ -1,6 +1,6 @@
 {
     "name": "TobbieII",
-    "version": "2.1.2",
+    "version": "2.1.3",
     "description": "Updated and translated Tobbie-II MakeCode extension",
     "license": "MIT",
     "dependencies": {
@@ -17,7 +17,6 @@
         "_locales/da/TobbieII-strings.json",
         "_locales/de/TobbieII-strings.json",
         "_locales/el/TobbieII-strings.json",
-        "_locales/en/TobbieII-strings.json",
         "_locales/es-ES/TobbieII-strings.json",
         "_locales/fi/TobbieII-strings.json",
         "_locales/fr/TobbieII-strings.json",

@@ -1,4 +1,5 @@
 {
+  "Note for any dev seeing this":"For whatever reason, makecode doesn't translate the english and instead take always whatever is written in main.ts, and if you remove what's there, it just doesn't make blocks, so this file is only for us to organize ourselves, or as a reference, but to let makecode use this, you have to put it in main.ts",
   "TobbieII|block": "Tobbie II",
   "TobbieII.Read_RBlock|block": "Read right IR sensor (0~1024)",
   "TobbieII.Read_LBlock|block": "Read left IR sensor (0~1024)",

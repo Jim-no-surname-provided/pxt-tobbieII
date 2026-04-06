@@ -36,6 +36,7 @@ namespace TobbieII {
     /** Read the value sensed by the right side of the infrared sensor.
     */
     //% blockId="Read_RBlock"
+    //% block="Read right IR sensor (0~1024)"
     //% blockGap=5 weight=65                 //與下一個方塊的間隙及排重
     export function Read_RBlock(): number {
         basic.pause(100)
@@ -50,6 +51,7 @@ namespace TobbieII {
     /** Read the value sensed by the left side of the infrared sensor.
     */
     //% blockId="Read_LBlock"
+    //% block="Read left IR sensor (0~1024)"
     //% blockGap=15 weight=60                 //與下一個方塊的間隙及排重
     export function Read_LBlock(): number {
         basic.pause(100)
@@ -64,9 +66,10 @@ namespace TobbieII {
     }
     /**
         *Determine if there are obstacles on the right side.
-        *@param thresholdR ; eg: 512
+        *@param thresholdR Above this threshold it results in true, under in false; eg. 512
         */
     //% blockId="RBlock"
+    //% block="Right IR sensor above %thresholdR|"
     //% thresholdR.min=0 thresholdR.max=1023
     //% blockGap=5 weight=58
     export function RBlock(thresholdR: number = 512): boolean {
@@ -87,9 +90,10 @@ namespace TobbieII {
     }
     /**
     *Determine if there are obstacles on the left side.
-    *@param thresholdL ; eg: 512
+    *@param thresholdR Above this threshold it results in true, under in false; eg. 512
     */
     //% blockId="LBlock"
+    //% block="Left IR sensor above %thresholdL|"
     //% thresholdL.min=0 thresholdL.max=1023
     //% blockGap=10 weight=57
     export function LBlock(thresholdL: number = 512): boolean {
@@ -115,6 +119,7 @@ namespace TobbieII {
     *Tobbie-II walks forward.
     */
     //% blockId="forward"
+    //% block="Move forward"
     //% blockGap=3 weight=35
     export function forward() {
         if (pins.digitalReadPin(P8) == 1) {
@@ -126,6 +131,7 @@ namespace TobbieII {
     *Tobbie-II walks backward.
     */
     //% blockId="backward"
+    //% block="Move backward"
     //% blockGap=3  weight=34
     export function backward() {
         if (Force != 0) {
@@ -142,6 +148,7 @@ namespace TobbieII {
     *Tobbie-II stops walking.
     */
     //% blockId="stopwalk"
+    //% block="Stop moving"
     //% blockGap=10 weight=33
     export function stopwalk() {
         pins.digitalWritePin(FORWARD_PIN, 0)
@@ -151,6 +158,7 @@ namespace TobbieII {
     *Tobbie-II rotates to the right.
     */
     //% blockId="rightward"
+    //% block="Turn right"
     //% blockGap=3  weight=32
     export function rightward() {
         pins.digitalWritePin(TURN_LEFT_PIN, 0)
@@ -162,6 +170,7 @@ namespace TobbieII {
     *Tobbie-II rotates to the left.
     */
     //% blockId="leftward"
+    //% block="Turn left"
     //% blockGap=3  weight=31
     export function leftward() {
         pins.digitalWritePin(TURN_LEFT_PIN, 1)
@@ -173,6 +182,7 @@ namespace TobbieII {
     *Tobbie-II stops rotating.
     */
     //% blockId="stopturn"
+    //% block="Stop turning"
     //% blockGap=10 weight=30
     export function stopturn() {
         if (Motor_L || Motor_R) {
@@ -195,9 +205,10 @@ namespace TobbieII {
 
     /**
        *Tobbie-II stamps his foot for a certain number of times.
-       *@param time describe parameter here, eg:5
+       *@param time the amount of times to stamp; eg. 5
        */
     //% blockId="vibrate"
+    //% block= "Stamp %time| times"
     //% time.min=1 time.max=100
     //% blockGap=5 weight=25
     //% advanced=true
@@ -215,9 +226,10 @@ namespace TobbieII {
     }
     /**
        *Tobbie-II shakes his head for a certain number of times.
-       *@param time describe parameter here, eg:5
+       *@param time the amount of times to shake the head; eg. 5
        */
     //% blockId="shake_head"
+    //% block="Shake head %time| times"
     //% time.min=1 time.max=100
     //% blockGap=5 weight=26
     //% advanced=true
@@ -235,9 +247,10 @@ namespace TobbieII {
     }
     /**
         *Tobbie-II repeats the dance for for a certain number of times.
-        *@param time describe parameter here, eg:5
+        *@param time the amount of times to dance; eg. 5
         */
     //% blockId="dance"
+    //% block="Dance %time| times"
     //% time.min=1 time.max=100
     //% blockGap=5 weight=24
     //% advanced=true
@@ -261,9 +274,10 @@ namespace TobbieII {
     }
     /**
         *Tobbie II shows his mood on the face (APP only).
-        *@param RX_Data A string of binary data where a 1 turns a led on, and a 0 off.
+        *@param RX_Data A string of binary data where a 1 turns a led on, and a 0 off; eg. "01101101"
         */
     //% blockId="drawface"
+    //% block="Show face %RX_Data| (app only)"
     //% blockGap=5 weight=23
     //% advanced=true
     export function drawface(RX_Data: string): void {
