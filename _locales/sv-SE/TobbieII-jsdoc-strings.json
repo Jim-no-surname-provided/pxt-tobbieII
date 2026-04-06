@@ -1,0 +1,13 @@
+{
+  "TobbieII.dance": "Tobbie-II upprepar dansen ett visst antal gånger.",
+  "TobbieII.getIR": "Läser av värdet från den valda IR-sensorn.",
+  "TobbieII.isObstacle": "Avgör om det finns ett hinder på den valda sidan.",
+  "TobbieII.rotate": "Börjar rotera åt höger eller vänster.",
+  "TobbieII.rotateTime": "Börjar rotera åt höger eller vänster under en viss tid.",
+  "TobbieII.shake_head": "Tobbie-II skakar på huvudet ett visst antal gånger.",
+  "TobbieII.stamp": "Tobbie-II stampar foten ett visst antal gånger.",
+  "TobbieII.stopRotation": "Tobbie-II slutar rotera.",
+  "TobbieII.stopWalk": "Tobbie-II slutar röra sig.",
+  "TobbieII.walk": "Får Tobbie-II att börja gå.",
+  "TobbieII.walkTime": "Får Tobbie-II att gå under en viss tid."
+}

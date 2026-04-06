@@ -1,0 +1,13 @@
+{
+  "TobbieII.dance": "Tobbie-II dansı belirli sayıda tekrar eder.",
+  "TobbieII.getIR": "Seçilen kızılötesi sensörün değerini okur.",
+  "TobbieII.isObstacle": "Seçilen tarafta bir engel olup olmadığını belirler.",
+  "TobbieII.rotate": "Sağa veya sola dönmeye başlar.",
+  "TobbieII.rotateTime": "Belirli bir süre boyunca döner.",
+  "TobbieII.shake_head": "Tobbie-II başını belirli sayıda sallar.",
+  "TobbieII.stamp": "Tobbie-II ayağını belirli sayıda yere vurur.",
+  "TobbieII.stopRotation": "Tobbie-II dönmeyi durdurur.",
+  "TobbieII.stopWalk": "Tobbie-II hareket etmeyi durdurur.",
+  "TobbieII.walk": "Tobbie-II'nin hareket etmeye başlamasını sağlar.",
+  "TobbieII.walkTime": "Tobbie-II'nin belirli bir süre hareket etmesini sağlar."
+}

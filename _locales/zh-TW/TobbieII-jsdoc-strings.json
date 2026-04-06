@@ -1,0 +1,13 @@
+{
+  "TobbieII.dance": "Tobbie-II 會重複跳舞若干次。",
+  "TobbieII.getIR": "讀取所選 IR 感測器的數值。",
+  "TobbieII.isObstacle": "判斷所選一側是否有障礙物。",
+  "TobbieII.rotate": "開始向左或向右旋轉。",
+  "TobbieII.rotateTime": "向左或向右旋轉一段時間。",
+  "TobbieII.shake_head": "Tobbie-II 會搖頭若干次。",
+  "TobbieII.stamp": "Tobbie-II 會跺腳若干次。",
+  "TobbieII.stopRotation": "Tobbie-II 停止旋轉。",
+  "TobbieII.stopWalk": "Tobbie-II 停止移動。",
+  "TobbieII.walk": "讓 Tobbie-II 開始移動。",
+  "TobbieII.walkTime": "讓 Tobbie-II 移動一段時間。"
+}

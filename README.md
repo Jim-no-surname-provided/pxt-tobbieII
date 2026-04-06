@@ -6,9 +6,9 @@ The Tobbie-II robot is a STEAMP DIY kit for BBC micro:bit. The Tobbie-II extends
 ## Code Example
 ```JavaScript
 basic.forever(function () {
-    TobbieII.forward()
-    if (TobbieII.RBlock(512)) {
-        TobbieII.stopwalk()
+    TobbieII.walk(TobbieII.MoveDirection.Forward)
+    if (TobbieII.isObstacle(TobbieII.IRSide.Right, TobbieII.Sensitivity.Medium)) {
+        TobbieII.stopWalk()
     }
 })
 ```

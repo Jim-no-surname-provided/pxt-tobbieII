@@ -1,5 +1,5 @@
 {
-  "TobbieII.dance": "Tobbie-II repeats the dance for for a certain number of times.",
+  "TobbieII.dance": "Tobbie-II repeats the dance for for a certain number of times",
   "TobbieII.dance|param|times": "the amount of times to dance; eg. 5",
   "TobbieII.getIR": "Read the value sensed by the right side of the infrared sensor.",
   "TobbieII.isObstacle": "Determine if there are obstacles on the right side.",

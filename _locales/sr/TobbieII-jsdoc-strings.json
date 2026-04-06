@@ -1,0 +1,13 @@
+{
+  "TobbieII.dance": "Tobbie-II понавља плес одређени број пута.",
+  "TobbieII.getIR": "Очитава вредност изабраног IR сензора.",
+  "TobbieII.isObstacle": "Одређује да ли постоји препрека на изабраној страни.",
+  "TobbieII.rotate": "Почиње да се окреће лево или десно.",
+  "TobbieII.rotateTime": "Окреће се одређено време.",
+  "TobbieII.shake_head": "Tobbie-II одмахује главом одређени број пута.",
+  "TobbieII.stamp": "Tobbie-II лупка ногом одређени број пута.",
+  "TobbieII.stopRotation": "Tobbie-II престаје да се окреће.",
+  "TobbieII.stopWalk": "Tobbie-II престаје да се креће.",
+  "TobbieII.walk": "Покреће Tobbie-II.",
+  "TobbieII.walkTime": "Покреће Tobbie-II на одређено време."
+}
