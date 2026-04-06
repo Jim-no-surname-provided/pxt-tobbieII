@@ -22,5 +22,6 @@
   "{id:category}TobbieII": "TobbieII",
   "{id:group}Infrared Sensor": "IR senzor",
   "{id:group}Rotating": "Otáčení",
-  "{id:group}Walking": "Chůze"
+  "{id:group}Walking": "Chůze",
+  "TobbieII.stamp|block": "Dupni %time| krát"
 }

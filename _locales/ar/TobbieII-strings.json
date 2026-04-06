@@ -22,5 +22,6 @@
   "{id:category}TobbieII": "TobbieII",
   "{id:group}Infrared Sensor": "مستشعر IR",
   "{id:group}Rotating": "الدوران",
-  "{id:group}Walking": "الحركة"
+  "{id:group}Walking": "الحركة",
+  "TobbieII.stamp|block": "اضرب الأرض بقدمك %time| مرات"
 }

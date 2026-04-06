@@ -22,5 +22,6 @@
   "{id:category}TobbieII": "TobbieII",
   "{id:group}Infrared Sensor": "IR сензор",
   "{id:group}Rotating": "Въртене",
-  "{id:group}Walking": "Движение"
+  "{id:group}Walking": "Движение",
+  "TobbieII.stamp|block": "Тропни %time| пъти"
 }

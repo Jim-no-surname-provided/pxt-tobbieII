@@ -22,5 +22,6 @@
   "{id:category}TobbieII": "TobbieII",
   "{id:group}Infrared Sensor": "IR sensor",
   "{id:group}Rotating": "ໝຸນ",
-  "{id:group}Walking": "ເດີນ"
+  "{id:group}Walking": "ເດີນ",
+  "TobbieII.stamp|block": "ຢ່ຳຕີນ %time| ເທື່ອ"
 }

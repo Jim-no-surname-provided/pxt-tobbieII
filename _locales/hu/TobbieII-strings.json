@@ -22,5 +22,6 @@
   "{id:category}TobbieII": "TobbieII",
   "{id:group}Infrared Sensor": "IR érzékelő",
   "{id:group}Rotating": "Forgás",
-  "{id:group}Walking": "Mozgás"
+  "{id:group}Walking": "Mozgás",
+  "TobbieII.stamp|block": "Dobbants %time| alkalommal"
 }

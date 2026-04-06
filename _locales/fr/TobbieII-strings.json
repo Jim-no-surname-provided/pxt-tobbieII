@@ -22,5 +22,6 @@
   "{id:category}TobbieII": "TobbieII",
   "{id:group}Infrared Sensor": "Capteur infrarouge",
   "{id:group}Rotating": "Rotation",
-  "{id:group}Walking": "Marche"
+  "{id:group}Walking": "Marche",
+  "TobbieII.stamp|block": "Taper du pied %time| fois"
 }

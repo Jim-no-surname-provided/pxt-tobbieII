@@ -14,6 +14,7 @@
   "TobbieII.rotateTime|block": "Rotate to the %direction for %seconds seconds",
   "TobbieII.rotate|block": "Rotate to the %direction",
   "TobbieII.shake_head|block": "Shake head %time| times",
+  "TobbieII.stamp|block": "Stamp %time| times",
   "TobbieII.stopRotation|block": "Stop rotating",
   "TobbieII.stopWalk|block": "Stop moving",
   "TobbieII.walkTime|block": "Walk %direction for %seconds seconds",

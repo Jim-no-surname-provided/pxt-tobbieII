@@ -22,5 +22,6 @@
   "{id:category}TobbieII": "TobbieII",
   "{id:group}Infrared Sensor": "Sensor IR",
   "{id:group}Rotating": "Rotação",
-  "{id:group}Walking": "Andar"
+  "{id:group}Walking": "Andar",
+  "TobbieII.stamp|block": "Bata o pé %time| vezes"
 }

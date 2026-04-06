@@ -22,5 +22,6 @@
   "{id:category}TobbieII": "TobbieII",
   "{id:group}Infrared Sensor": "ІЧ датчик",
   "{id:group}Rotating": "Обертання",
-  "{id:group}Walking": "Ходьба"
+  "{id:group}Walking": "Ходьба",
+  "TobbieII.stamp|block": "Тупни %time| разів"
 }

@@ -22,5 +22,6 @@
   "{id:category}TobbieII": "TobbieII",
   "{id:group}Infrared Sensor": "Cảm biến IR",
   "{id:group}Rotating": "Xoay",
-  "{id:group}Walking": "Di chuyển"
+  "{id:group}Walking": "Di chuyển",
+  "TobbieII.stamp|block": "Dậm chân %time| lần"
 }

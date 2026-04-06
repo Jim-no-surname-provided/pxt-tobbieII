@@ -251,7 +251,7 @@ namespace TobbieII {
        *@param times the amount of times to stamp; eg. 5
        */
     //% blockId="stamp"
-    //% block= "Stamp %time| times"
+    //% block="Stamp %time| times"
     //% time.min=1 time.max=100
     //% blockGap=3 weight=4
     //% advanced=true

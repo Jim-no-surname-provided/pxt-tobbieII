@@ -22,5 +22,6 @@
   "{id:category}TobbieII": "TobbieII",
   "{id:group}Infrared Sensor": "IR-sensor",
   "{id:group}Rotating": "Draaien",
-  "{id:group}Walking": "Lopen"
+  "{id:group}Walking": "Lopen",
+  "TobbieII.stamp|block": "%time| keer stampen"
 }

@@ -22,5 +22,6 @@
   "{id:category}TobbieII": "TobbieII",
   "{id:group}Infrared Sensor": "红外传感器",
   "{id:group}Rotating": "旋转",
-  "{id:group}Walking": "行走"
+  "{id:group}Walking": "行走",
+  "TobbieII.stamp|block": "跺脚 %time| 次"
 }

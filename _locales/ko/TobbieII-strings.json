@@ -22,5 +22,6 @@
   "{id:category}TobbieII": "TobbieII",
   "{id:group}Infrared Sensor": "적외선 센서",
   "{id:group}Rotating": "회전",
-  "{id:group}Walking": "걷기"
+  "{id:group}Walking": "걷기",
+  "TobbieII.stamp|block": "%time| 번 발 구르기"
 }

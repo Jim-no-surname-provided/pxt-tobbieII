@@ -22,5 +22,6 @@
   "{id:category}TobbieII": "TobbieII",
   "{id:group}Infrared Sensor": "赤外線センサー",
   "{id:group}Rotating": "回転",
-  "{id:group}Walking": "歩行"
+  "{id:group}Walking": "歩行",
+  "TobbieII.stamp|block": "%time| 回足踏みする"
 }
