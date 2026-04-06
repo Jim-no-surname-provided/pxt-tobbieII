@@ -1,13 +1,10 @@
 //% weight=0 color=#FF8B27 icon="\uf1b9" block="TobbieII"
+//% groups=['Infrared sensors', 'Walking', 'Rotating']
 
 //uf1b9
 namespace TobbieII {
-    let ADL_R: number = 0;
-    let ADH_R: number = 0;
-    let ADL_L: number = 0;
-    let ADH_L: number = 0;
-    let Read_LIR: number = 0;
-    let Read_RIR: number = 0;
+    let reflected: number = 0;
+
     let event_src_ir = 12;
     let event_ir_sensor = 1;
     let Motor_R: boolean = false;
@@ -18,8 +15,8 @@ namespace TobbieII {
 
     const IR_LED_PIN = DigitalPin.P12;
 
-    const IR_RIGHT_PIN = AnalogPin.P1
-    const IR_LEFT_PIN = AnalogPin.P2
+    const IR_LEFT_PIN = AnalogPin.P1
+    const IR_RIGHT_PIN = AnalogPin.P2
 
     // These are positive and negative sides for the same motor, and sending 1 to one, you have to send 0 to the other.
     const FORWARD_PIN = DigitalPin.P13;
@@ -29,150 +26,197 @@ namespace TobbieII {
     const TURN_LEFT_PIN = DigitalPin.P15;
     const TURN_RIGHT_PIN = DigitalPin.P16;
 
-    // This pin is undocumented, I have no idea what it is -Jim no surname provided
-    const P8 = DigitalPin.P8;
+    // This pin is undocumented, I don't know what it is -Jim no surname provided
+    const isValid = () => pins.digitalReadPin(DigitalPin.P8) == 1;
 
+    export enum MoveDirection {
+        //% block="forward"
+        Forward,
+        //% block="backward"
+        Backward
+    }
 
-    /** Read the value sensed by the right side of the infrared sensor.
+    export enum RotateDirection {
+        //% block="left"
+        Left,
+        //% block="right"
+        Right
+    }
+
+    // I could reuse TurnDirection, but I thought this is cleaner
+    export enum IRSide {
+        //% block="left"
+        Left,
+        //% block="right"
+        Right
+    }
+
+    export enum Sensitivity {
+        //% block="low"
+        Low = 300,
+        //% block="medium"
+        Medium = 500,
+        //% block="high"
+        High = 700
+    }
+
+    /** 
+     * Read the value sensed by the right side of the infrared sensor.
     */
-    //% blockId="Read_RBlock"
-    //% block="Read right IR sensor (0~1024)"
-    //% blockGap=5 weight=65                 //與下一個方塊的間隙及排重
-    export function Read_RBlock(): number {
+    //% blockId="getIR"
+    //% block="%sensor IR sensor value (0-1024)"
+    //% group="Infrared Sensor"
+    //% blockGap=3 weight=1 
+    export function getIR(side: IRSide): number {
+        // Get correct pin based on the side
+        let IR_PIN;
+        if (side == IRSide.Left) {
+            IR_PIN = IR_LEFT_PIN
+        } else {
+            IR_PIN = IR_RIGHT_PIN
+        }
+
         basic.pause(100)
-        ADL_R = pins.analogReadPin(IR_LEFT_PIN)
+
+        let ambient = pins.analogReadPin(IR_PIN)
+
+        // Turn LED on
         pins.digitalWritePin(IR_LED_PIN, 1)
         control.waitMicros(250)
-        ADH_R = pins.analogReadPin(IR_LEFT_PIN)
-        pins.digitalWritePin(IR_LED_PIN, 0)
-        if (pins.digitalReadPin(P8) == 1) Read_RIR = ADH_R - ADL_R;
-        return (Read_RIR)
-    }
-    /** Read the value sensed by the left side of the infrared sensor.
-    */
-    //% blockId="Read_LBlock"
-    //% block="Read left IR sensor (0~1024)"
-    //% blockGap=15 weight=60                 //與下一個方塊的間隙及排重
-    export function Read_LBlock(): number {
-        basic.pause(100)
-        ADL_L = pins.analogReadPin(IR_RIGHT_PIN)
-        pins.digitalWritePin(IR_LED_PIN, 1)
-        control.waitMicros(250)
-        ADH_L = pins.analogReadPin(IR_RIGHT_PIN)
+
+        let illuminated = pins.analogReadPin(IR_PIN)
+
+        // Turn LED off
         pins.digitalWritePin(IR_LED_PIN, 0)
 
-        Read_LIR = ADH_L - ADL_L;
-        return (Read_LIR)
+        if (isValid()) {
+            reflected = illuminated - ambient
+        }
+
+        return reflected
     }
+
     /**
         *Determine if there are obstacles on the right side.
-        *@param thresholdR Above this threshold it results in true, under in false; eg. 512
+        *@param side Left or right infrared sensor
+        *@param sensitivity This controls the threshold between a true and false
         */
-    //% blockId="RBlock"
-    //% block="Right IR sensor above %thresholdR|"
-    //% thresholdR.min=0 thresholdR.max=1023
-    //% blockGap=5 weight=58
-    export function RBlock(thresholdR: number = 512): boolean {
-        basic.pause(100)
-        ADL_R = pins.analogReadPin(IR_LEFT_PIN)
-        pins.digitalWritePin(IR_LED_PIN, 1)
-        control.waitMicros(250)
-        ADH_R = pins.analogReadPin(IR_LEFT_PIN)
-        pins.digitalWritePin(IR_LED_PIN, 0)
+    //% blockId="isObstacle"
+    //% block="Is there an obstacle on the $side|| with $sensitivity sensitivity"
+    //% group="Infrared Sensor"
+    //% sensitivity.defl=Sensitivity.Medium
+    //% blockGap=3 weight=0
+    export function isObstacle(side: IRSide, sensitivity: Sensitivity): boolean {
+        return getIR(side) > sensitivity && isValid()
+    }
 
-        if (((ADH_R - ADL_R) > thresholdR) && (pins.digitalReadPin(P8) == 1)) {
-            //basic.showIcon(IconNames.House)
-            return (true)
-        } else {
-            //basic.showIcon(IconNames.Cow)
-            return (false)
-        }
-    }
     /**
-    *Determine if there are obstacles on the left side.
-    *@param thresholdR Above this threshold it results in true, under in false; eg. 512
+    *   Make TobbieII start walking.
+    *   @param direction forward or backward
     */
-    //% blockId="LBlock"
-    //% block="Left IR sensor above %thresholdL|"
-    //% thresholdL.min=0 thresholdL.max=1023
-    //% blockGap=10 weight=57
-    export function LBlock(thresholdL: number = 512): boolean {
-        basic.pause(100)
-        ADL_L = pins.analogReadPin(IR_RIGHT_PIN)
-        pins.digitalWritePin(IR_LED_PIN, 1)
-        control.waitMicros(250)
-        ADH_L = 0
-        if (pins.digitalReadPin(P8) == 1) {
-            ADH_L = pins.analogReadPin(IR_RIGHT_PIN)
-            pins.digitalWritePin(IR_LED_PIN, 0)
-        }
-        if ((ADH_L - ADL_L) > thresholdL) {//512) { 
-            //basic.showIcon(IconNames.House)
-            return (true)
+    //% blockId="walk"
+    //% block="Walk %direction"
+    //% group="Walking"
+    //% blockGap=3 weight=3
+    export function walk(direction: MoveDirection) {
+        if (direction == MoveDirection.Forward) {
+            forward();
         } else {
-            //basic.showIcon(IconNames.Cow)
-            return (false)
+            backward();
         }
     }
+
+    /**
+    *   Make TobbieII for an amount of seconds.
+    *   @param direction forward or backward
+    *   @param seconds The time in seconds Tobbie should walk for
+    */
+    //% blockId="walk_seconds"
+    //% block="Walk %direction for %seconds seconds"
+    //% group="Walking"
+    //% blockGap=3 weight=2
+    //% seconds.defl=1.5
+    export function walkTime(direction: MoveDirection, seconds: number) {
+        walk(direction);
+        basic.pause(seconds / 1000);
+        stopWalk();
+    }
+
 
     /**
     *Tobbie-II walks forward.
     */
-    //% blockId="forward"
-    //% block="Move forward"
-    //% blockGap=3 weight=35
-    export function forward() {
-        if (pins.digitalReadPin(P8) == 1) {
+    function forward() {
+        if (isValid()) {
             pins.digitalWritePin(FORWARD_PIN, 1)
             pins.digitalWritePin(BACKWARD_PIN, 0)
         }
     }
     /**
-    *Tobbie-II walks backward.
+    *   Tobbie-II walks backward.
+    *   I have no idea what Force does.
     */
-    //% blockId="backward"
-    //% block="Move backward"
-    //% blockGap=3  weight=34
-    export function backward() {
+    function backward() {
         if (Force != 0) {
             pins.digitalWritePin(FORWARD_PIN, 0)
             pins.digitalWritePin(BACKWARD_PIN, 1)
             Force = Force - 1;
         }
-        if (pins.digitalReadPin(P8) == 1) {
+        if (isValid()) {
             Force = 10
         }
 
     }
-    /**
-    *Tobbie-II stops walking.
+    /** 
+    *   Tobbie-II stops walking.
     */
     //% blockId="stopwalk"
     //% block="Stop moving"
-    //% blockGap=10 weight=33
-    export function stopwalk() {
+    //% group="Walking"
+    //% blockGap=3 weight=1
+    export function stopWalk() {
         pins.digitalWritePin(FORWARD_PIN, 0)
         pins.digitalWritePin(BACKWARD_PIN, 0)
     }
+
     /**
-    *Tobbie-II rotates to the right.
-    */
-    //% blockId="rightward"
-    //% block="Turn right"
-    //% blockGap=3  weight=32
-    export function rightward() {
+     * Start rotating to the right or to the left
+     * @param direction Right or Left
+     */
+    //% blockId="rotate"
+    //% block="Rotate to the %direction"
+    //% group="Rotating"
+    //% blockGap=3 weight=3
+    export function rotate(direction: RotateDirection) {
+        if (direction == RotateDirection.Right) {
+            rightward()
+        } else {
+            leftward()
+        }
+    }
+    /**
+     * Start rotating to the right or to the left
+     * @param direction Right or Left
+     * @param [seconds=1.5] Time in seconds Tobbie should Rotate for
+     */
+    //% blockId="rotate_time"
+    //% block="Rotate to the %direction for %seconds seconds"
+    //% group="Rotating"
+    //% blockGap=3 weight=2
+    //% seconds.defl=1.5
+    export function rotateTime(direction: RotateDirection, seconds: number = 1.5) {
+        rotate(direction);
+        basic.pause(seconds);
+        stopRotation();
+    }
+
+    function rightward() {
         pins.digitalWritePin(TURN_LEFT_PIN, 0)
         pins.digitalWritePin(TURN_RIGHT_PIN, 1)
         Motor_L = false
         Motor_R = true
     }
-    /**
-    *Tobbie-II rotates to the left.
-    */
-    //% blockId="leftward"
-    //% block="Turn left"
-    //% blockGap=3  weight=31
-    export function leftward() {
+    function leftward() {
         pins.digitalWritePin(TURN_LEFT_PIN, 1)
         pins.digitalWritePin(TURN_RIGHT_PIN, 0)
         Motor_L = true
@@ -181,21 +225,20 @@ namespace TobbieII {
     /**
     *Tobbie-II stops rotating.
     */
-    //% blockId="stopturn"
-    //% block="Stop turning"
-    //% blockGap=10 weight=30
-    export function stopturn() {
+    //% blockId="stopRotation"
+    //% block="Stop rotating"
+    //% group="Rotating"
+    //% blockGap=3 weight=1
+    export function stopRotation() {
         if (Motor_L || Motor_R) {
             if (Motor_R) {
-                pins.digitalWritePin(TURN_LEFT_PIN, 1)
-                pins.digitalWritePin(TURN_RIGHT_PIN, 0)
+                leftward()
             } else {
-                pins.digitalWritePin(TURN_LEFT_PIN, 0)
-                pins.digitalWritePin(TURN_RIGHT_PIN, 1)
+                rightward()
             }
             basic.pause(50)
         }
-        if (pins.digitalReadPin(P8) == 1) {
+        if (isValid()) {
             pins.digitalWritePin(TURN_LEFT_PIN, 0)
             pins.digitalWritePin(TURN_RIGHT_PIN, 0)
             Motor_L = false
@@ -205,15 +248,15 @@ namespace TobbieII {
 
     /**
        *Tobbie-II stamps his foot for a certain number of times.
-       *@param time the amount of times to stamp; eg. 5
+       *@param times the amount of times to stamp; eg. 5
        */
-    //% blockId="vibrate"
+    //% blockId="stamp"
     //% block= "Stamp %time| times"
     //% time.min=1 time.max=100
-    //% blockGap=5 weight=25
+    //% blockGap=3 weight=4
     //% advanced=true
-    export function vibrate(time: number): void {
-        for (let i = 0; i < time; i++) {
+    export function stamp(times: number): void {
+        for (let i = 0; i < times; i++) {
             pins.digitalWritePin(FORWARD_PIN, 1)  //向前
             pins.digitalWritePin(BACKWARD_PIN, 0)
             basic.pause(150)
@@ -226,15 +269,15 @@ namespace TobbieII {
     }
     /**
        *Tobbie-II shakes his head for a certain number of times.
-       *@param time the amount of times to shake the head; eg. 5
+       *@param times the amount of times to shake the head; eg. 5
        */
     //% blockId="shake_head"
     //% block="Shake head %time| times"
     //% time.min=1 time.max=100
-    //% blockGap=5 weight=26
+    //% blockGap=3 weight=3
     //% advanced=true
-    export function shake_head(time: number): void {
-        for (let i = 0; i < time; i++) {
+    export function shake_head(times: number): void {
+        for (let i = 0; i < times; i++) {
             pins.digitalWritePin(TURN_LEFT_PIN, 1)  //左轉
             pins.digitalWritePin(TURN_RIGHT_PIN, 0)
             basic.pause(250)
@@ -247,15 +290,15 @@ namespace TobbieII {
     }
     /**
         *Tobbie-II repeats the dance for for a certain number of times.
-        *@param time the amount of times to dance; eg. 5
+        *@param times the amount of times to dance; eg. 5
         */
     //% blockId="dance"
     //% block="Dance %time| times"
     //% time.min=1 time.max=100
-    //% blockGap=5 weight=24
+    //% blockGap=3 weight=2
     //% advanced=true
-    export function dance(time: number): void {
-        for (let i = 0; i < time; i++) {
+    export function dance(times: number): void {
+        for (let i = 0; i < times; i++) {
             pins.digitalWritePin(FORWARD_PIN, 0)  //向後
             pins.digitalWritePin(BACKWARD_PIN, 1)
             pins.digitalWritePin(TURN_LEFT_PIN, 0)  //右轉
@@ -271,27 +314,6 @@ namespace TobbieII {
         pins.digitalWritePin(BACKWARD_PIN, 0)
         pins.digitalWritePin(TURN_LEFT_PIN, 0)
         pins.digitalWritePin(TURN_RIGHT_PIN, 0)
-    }
-    /**
-        *Tobbie II shows his mood on the face (APP only).
-        *@param RX_Data A string of binary data where a 1 turns a led on, and a 0 off; eg. "01101101"
-        */
-    //% blockId="drawface"
-    //% block="Show face %RX_Data| (app only)"
-    //% blockGap=5 weight=23
-    //% advanced=true
-    export function drawface(RX_Data: string): void {
-        basic.clearScreen()
-        for (let PY = 0; PY <= 4; PY++) {
-            let PLOT_DATA: number = parseInt(RX_Data.substr(PY * 2 + 1, 2))
-            for (let PX = 0; PX <= 4; PX++) {
-                if (PLOT_DATA % 2 == 1) {
-                    led.plot(PX, PY)
-                    PLOT_DATA = PLOT_DATA - 1
-                }
-                PLOT_DATA = PLOT_DATA / 2
-            }
-        }
     }
 }
 
