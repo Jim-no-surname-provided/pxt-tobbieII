@@ -3,14 +3,10 @@
 
 //uf1b9
 namespace TobbieII {
-    let reflected: number = 0;
+    let reflectedIRValue: number = 0;
 
-    let event_src_ir = 12;
-    let event_ir_sensor = 1;
     let Motor_R: boolean = false;
     let Motor_L: boolean = false;
-    let PX: number = 0;
-    let PY: number = 0;
     let Force: number = 10;
 
     const IR_LED_PIN = DigitalPin.P12;
@@ -26,7 +22,8 @@ namespace TobbieII {
     const TURN_LEFT_PIN = DigitalPin.P15;
     const TURN_RIGHT_PIN = DigitalPin.P16;
 
-    // This pin is undocumented, I don't know what it is -Jim no surname provided
+    // This pin is undocumented, I don't know what it is, and so I tried not to touch it
+    // If you do, please tell me. I took an educated guess -Jim no surname provided
     const isValid = () => pins.digitalReadPin(DigitalPin.P8) == 1;
 
     export enum MoveDirection {
@@ -80,20 +77,20 @@ namespace TobbieII {
 
         let ambient = pins.analogReadPin(IR_PIN)
 
-        // Turn LED on
+        // Turn IR LED on
         pins.digitalWritePin(IR_LED_PIN, 1)
         control.waitMicros(250)
 
         let illuminated = pins.analogReadPin(IR_PIN)
 
-        // Turn LED off
+        // Turn IR LED off
         pins.digitalWritePin(IR_LED_PIN, 0)
 
         if (isValid()) {
-            reflected = illuminated - ambient
+            reflectedIRValue = illuminated - ambient
         }
 
-        return reflected
+        return reflectedIRValue
     }
 
     /**
@@ -144,7 +141,7 @@ namespace TobbieII {
 
 
     /**
-    *Tobbie-II walks forward.
+    *   Tobbie-II walks forward.
     */
     function forward() {
         if (isValid()) {
@@ -154,7 +151,7 @@ namespace TobbieII {
     }
     /**
     *   Tobbie-II walks backward.
-    *   I have no idea what Force does.
+    *   I have no idea what Force does. -Jim no surname provided
     */
     function backward() {
         if (Force != 0) {
