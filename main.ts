@@ -11,8 +11,8 @@ namespace TobbieII {
 
     const IR_LED_PIN = DigitalPin.P12;
 
-    const IR_LEFT_PIN = AnalogPin.P1
-    const IR_RIGHT_PIN = AnalogPin.P2
+    const IR_LEFT_PIN = AnalogPin.P2;
+    const IR_RIGHT_PIN = AnalogPin.P1;
 
     // These are positive and negative sides for the same motor, and sending 1 to one, you have to send 0 to the other.
     const FORWARD_PIN = DigitalPin.P13;
