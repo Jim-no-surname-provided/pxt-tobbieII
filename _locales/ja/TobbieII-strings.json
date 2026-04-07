@@ -9,7 +9,7 @@
   "TobbieII.Sensitivity.Low|block": "低い",
   "TobbieII.Sensitivity.Medium|block": "普通",
   "TobbieII.dance|block": "%time| 回ダンスする",
-  "TobbieII.getIR|block": "%sensor のIRセンサー値 (0-1024)",
+  "TobbieII.getIR|block": "%sensor のIRセンサー値 ",
   "TobbieII.isObstacle|block": "$side に障害物はありますか|| 感度 $sensitivity",
   "TobbieII.rotateTime|block": "%direction に %seconds 秒回転する",
   "TobbieII.rotate|block": "%direction に回転する",

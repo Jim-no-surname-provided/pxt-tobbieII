@@ -9,7 +9,7 @@
   "TobbieII.Sensitivity.Low|block": "thấp",
   "TobbieII.Sensitivity.Medium|block": "trung bình",
   "TobbieII.dance|block": "Nhảy %time| lần",
-  "TobbieII.getIR|block": "giá trị cảm biến IR %sensor (0-1024)",
+  "TobbieII.getIR|block": "giá trị cảm biến IR %sensor ",
   "TobbieII.isObstacle|block": "Có vật cản ở $side không|| với độ nhạy $sensitivity",
   "TobbieII.rotateTime|block": "Xoay %direction trong %seconds giây",
   "TobbieII.rotate|block": "Xoay %direction",

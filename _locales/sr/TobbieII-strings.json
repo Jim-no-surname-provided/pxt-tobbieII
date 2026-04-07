@@ -9,7 +9,7 @@
   "TobbieII.Sensitivity.Low|block": "ниска",
   "TobbieII.Sensitivity.Medium|block": "средња",
   "TobbieII.dance|block": "Плеши %time| пута",
-  "TobbieII.getIR|block": "вредност IR сензора %sensor (0-1024)",
+  "TobbieII.getIR|block": "вредност IR сензора %sensor ",
   "TobbieII.isObstacle|block": "Да ли постоји препрека на $side|| са осетљивошћу $sensitivity",
   "TobbieII.rotateTime|block": "Окрећи се %direction %seconds секунди",
   "TobbieII.rotate|block": "Окрећи се %direction",

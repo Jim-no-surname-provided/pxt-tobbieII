@@ -61,7 +61,7 @@ namespace TobbieII {
      * Read the value sensed by the right side of the infrared sensor.
     */
     //% blockId="getIR"
-    //% block="%sensor IR sensor value (0-1024)"
+    //% block="%sensor IR sensor value "
     //% group="Infrared Sensor"
     //% blockGap=3 weight=1 
     export function getIR(side: IRSide): number {

@@ -9,7 +9,7 @@
   "TobbieII.Sensitivity.Low|block": "låg",
   "TobbieII.Sensitivity.Medium|block": "medel",
   "TobbieII.dance|block": "Dansa %time| gånger",
-  "TobbieII.getIR|block": "IR-sensorvärde %sensor (0-1024)",
+  "TobbieII.getIR|block": "IR-sensorvärde %sensor ",
   "TobbieII.isObstacle|block": "Finns det ett hinder på $side|| med känslighet $sensitivity",
   "TobbieII.rotateTime|block": "Rotera %direction i %seconds sekunder",
   "TobbieII.rotate|block": "Rotera %direction",

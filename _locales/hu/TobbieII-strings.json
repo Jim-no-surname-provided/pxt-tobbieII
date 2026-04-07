@@ -9,7 +9,7 @@
   "TobbieII.Sensitivity.Low|block": "alacsony",
   "TobbieII.Sensitivity.Medium|block": "közepes",
   "TobbieII.dance|block": "Táncolj %time| alkalommal",
-  "TobbieII.getIR|block": "%sensor IR érzékelő érték (0-1024)",
+  "TobbieII.getIR|block": "%sensor IR érzékelő érték ",
   "TobbieII.isObstacle|block": "Van akadály a(z) $side oldalon|| $sensitivity érzékenységgel",
   "TobbieII.rotateTime|block": "Fordulj %direction %seconds másodpercig",
   "TobbieII.rotate|block": "Fordulj %direction",

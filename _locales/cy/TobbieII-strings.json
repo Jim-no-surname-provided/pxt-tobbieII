@@ -9,7 +9,7 @@
   "TobbieII.Sensitivity.Low|block": "isel",
   "TobbieII.Sensitivity.Medium|block": "canolig",
   "TobbieII.dance|block": "Dawnsio %time| gwaith",
-  "TobbieII.getIR|block": "gwerth synhwyrydd IR %sensor (0-1024)",
+  "TobbieII.getIR|block": "gwerth synhwyrydd IR %sensor 
   "TobbieII.isObstacle|block": "A oes rhwystr ar $side|| gyda sensitifrwydd $sensitivity",
   "TobbieII.rotateTime|block": "Troi %direction am %seconds eiliad",
   "TobbieII.rotate|block": "Troi %direction",

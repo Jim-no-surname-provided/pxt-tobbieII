@@ -9,7 +9,7 @@
   "TobbieII.Sensitivity.Low|block": "පහළ",
   "TobbieII.Sensitivity.Medium|block": "මධ්‍යම",
   "TobbieII.dance|block": "නර්තනය %time| වර",
-  "TobbieII.getIR|block": "IR සංවේදක අගය %sensor (0-1024)",
+  "TobbieII.getIR|block": "IR සංවේදක අගය %sensor ",
   "TobbieII.isObstacle|block": "$side පැත්තේ බාධාවක් තිබේද|| සංවේදීතාව $sensitivity",
   "TobbieII.rotateTime|block": "%direction ලෙස %seconds තත්පර හැරෙන්න",
   "TobbieII.rotate|block": "%direction ලෙස හැරෙන්න",

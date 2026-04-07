@@ -9,7 +9,7 @@
   "TobbieII.Sensitivity.Low|block": "ຕໍ່າ",
   "TobbieII.Sensitivity.Medium|block": "ປານກາງ",
   "TobbieII.dance|block": "ເຕັ້ນ %time| ເທື່ອ",
-  "TobbieII.getIR|block": "ຄ່າ sensor IR %sensor (0-1024)",
+  "TobbieII.getIR|block": "ຄ່າ sensor IR %sensor ",
   "TobbieII.isObstacle|block": "ມີສິ່ງກີດຂວາງທີ່ $side|| ດ້ວຍຄວາມໄວ $sensitivity",
   "TobbieII.rotateTime|block": "ໝຸນ %direction %seconds ວິນາທີ",
   "TobbieII.rotate|block": "ໝຸນ %direction",

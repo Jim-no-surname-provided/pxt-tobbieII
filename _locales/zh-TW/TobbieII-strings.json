@@ -9,7 +9,7 @@
   "TobbieII.Sensitivity.Low|block": "低",
   "TobbieII.Sensitivity.Medium|block": "中",
   "TobbieII.dance|block": "跳舞 %time| 次",
-  "TobbieII.getIR|block": "IR 感測器 %sensor 數值 (0-1024)",
+  "TobbieII.getIR|block": "IR 感測器 %sensor 數值 ",
   "TobbieII.isObstacle|block": "$side 有障礙物嗎|| 靈敏度 $sensitivity",
   "TobbieII.rotateTime|block": "向 %direction 旋轉 %seconds 秒",
   "TobbieII.rotate|block": "向 %direction 旋轉",

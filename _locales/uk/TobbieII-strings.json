@@ -9,7 +9,7 @@
   "TobbieII.Sensitivity.Low|block": "низька",
   "TobbieII.Sensitivity.Medium|block": "середня",
   "TobbieII.dance|block": "Танцюй %time| разів",
-  "TobbieII.getIR|block": "значення ІЧ датчика %sensor (0-1024)",
+  "TobbieII.getIR|block": "значення ІЧ датчика %sensor ",
   "TobbieII.isObstacle|block": "Чи є перешкода з боку $side|| з чутливістю $sensitivity",
   "TobbieII.rotateTime|block": "Обертайся %direction %seconds секунд",
   "TobbieII.rotate|block": "Обертайся %direction",

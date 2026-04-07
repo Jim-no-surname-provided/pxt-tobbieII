@@ -9,7 +9,7 @@
   "TobbieII.Sensitivity.Low|block": "נמוכה",
   "TobbieII.Sensitivity.Medium|block": "בינונית",
   "TobbieII.dance|block": "רקוד %time| פעמים",
-  "TobbieII.getIR|block": "ערך חיישן IR %sensor (0-1024)",
+  "TobbieII.getIR|block": "ערך חיישן IR %sensor ",
   "TobbieII.isObstacle|block": "האם יש מכשול ב-$side|| עם רגישות $sensitivity",
   "TobbieII.rotateTime|block": "הסתובב ל-%direction למשך %seconds שניות",
   "TobbieII.rotate|block": "הסתובב ל-%direction",
