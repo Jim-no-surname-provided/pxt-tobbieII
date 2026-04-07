@@ -472,7 +472,7 @@ TRANSLATIONS = {
         "TobbieII.Sensitivity.Low|block": "thấp",
         "TobbieII.Sensitivity.Medium|block": "trung bình",
         "TobbieII.dance|block": "Nhảy %time| lần",
-        "TobbieII.getIR|block": "giá trị cảm biến IR %sensor 
+        "TobbieII.getIR|block": "giá trị cảm biến IR %sensor",
         "TobbieII.isObstacle|block": "Có vật cản ở $side không|| với độ nhạy $sensitivity",
         "TobbieII.rotateTime|block": "Xoay %direction trong %seconds giây",
         "TobbieII.rotate|block": "Xoay %direction",
@@ -758,7 +758,7 @@ TRANSLATIONS = {
         "TobbieII.Sensitivity.Low|block": "낮음",
         "TobbieII.Sensitivity.Medium|block": "보통",
         "TobbieII.dance|block": "%time| 번 춤추기",
-        "TobbieII.getIR|block": "%sensor IR 센서 값 
+        "TobbieII.getIR|block": "%sensor IR 센서 값",
         "TobbieII.isObstacle|block": "$side 에 장애물이 있나요|| 민감도 $sensitivity",
         "TobbieII.rotateTime|block": "%direction 으로 %seconds 초 동안 회전하기",
         "TobbieII.rotate|block": "%direction 으로 회전하기",
@@ -836,7 +836,7 @@ TRANSLATIONS = {
         "TobbieII.Sensitivity.Low|block": "laag",
         "TobbieII.Sensitivity.Medium|block": "gemiddeld",
         "TobbieII.dance|block": "Dans %time| keer",
-        "TobbieII.getIR|block": "IR-sensorwaarde %sensor 
+        "TobbieII.getIR|block": "IR-sensorwaarde %sensor",
         "TobbieII.isObstacle|block": "Is er een obstakel aan de $side|| met gevoeligheid $sensitivity",
         "TobbieII.rotateTime|block": "Draai %direction voor %seconds seconden",
         "TobbieII.rotate|block": "Draai %direction",

@@ -9,7 +9,7 @@
   "TobbieII.Sensitivity.Low|block": "yvy",
   "TobbieII.Sensitivity.Medium|block": "mbyte",
   "TobbieII.dance|block": "Jeroky %time| jey",
-  "TobbieII.getIR|block": "valor sensor IR %sensor 
+  "TobbieII.getIR|block": "valor sensor IR %sensor",
   "TobbieII.isObstacle|block": "Oĩpa peteĩ mba'e ojokóva $side|| rehe $sensitivity rehe",
   "TobbieII.rotateTime|block": "Ojere %direction %seconds segúndo",
   "TobbieII.rotate|block": "Ojere %direction",
