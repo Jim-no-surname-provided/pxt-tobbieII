@@ -3,12 +3,6 @@
 
 //uf1b9
 namespace TobbieII {
-    let reflectedIRValue: number = 0;
-
-    let Motor_R: boolean = false;
-    let Motor_L: boolean = false;
-    let Force: number = 10;
-
     const IR_LED_PIN = DigitalPin.P12;
 
     const IR_LEFT_PIN = AnalogPin.P2;
@@ -24,7 +18,7 @@ namespace TobbieII {
 
     // This pin is undocumented, I don't know what it is, and so I tried not to touch it
     // If you do, please tell me. I took an educated guess -Jim no surname provided
-    const isValid = () => pins.digitalReadPin(DigitalPin.P8) == 1;
+    const hasBattery = () => pins.digitalReadPin(DigitalPin.P8) == 1;
 
     export enum MoveDirection {
         //% block="forward"
@@ -65,6 +59,10 @@ namespace TobbieII {
     //% group="Infrared Sensor"
     //% blockGap=3 weight=1 
     export function getIR(side: IRSide): number {
+        if (!hasBattery()) {
+            return 0
+        }
+
         // Get correct pin based on the side
         let IR_PIN;
         if (side == IRSide.Left) {
@@ -75,22 +73,18 @@ namespace TobbieII {
 
         basic.pause(100)
 
-        let ambient = pins.analogReadPin(IR_PIN)
+        const ambient = pins.analogReadPin(IR_PIN)
 
         // Turn IR LED on
         pins.digitalWritePin(IR_LED_PIN, 1)
         control.waitMicros(250)
 
-        let illuminated = pins.analogReadPin(IR_PIN)
+        const illuminated = pins.analogReadPin(IR_PIN)
 
         // Turn IR LED off
         pins.digitalWritePin(IR_LED_PIN, 0)
 
-        if (isValid()) {
-            reflectedIRValue = illuminated - ambient
-        }
-
-        return reflectedIRValue
+        return illuminated - ambient
     }
 
     /**
@@ -104,7 +98,7 @@ namespace TobbieII {
     //% sensitivity.defl=Sensitivity.Medium
     //% blockGap=3 weight=0
     export function isObstacle(side: IRSide, sensitivity: Sensitivity): boolean {
-        return getIR(side) > sensitivity && isValid()
+        return getIR(side) > sensitivity && hasBattery()
     }
 
     /**
@@ -139,30 +133,24 @@ namespace TobbieII {
         stopWalk();
     }
 
-
     /**
     *   Tobbie-II walks forward.
     */
     function forward() {
-        if (isValid()) {
+        if (hasBattery()) {
             pins.digitalWritePin(FORWARD_PIN, 1)
             pins.digitalWritePin(BACKWARD_PIN, 0)
         }
     }
     /**
-    *   Tobbie-II walks backward.
-    *   I have no idea what Force does. -Jim no surname provided
+     *   Tobbie-II walks backward.
+     *   I have no idea what Force does. -Jim no surname provided
     */
     function backward() {
-        if (Force != 0) {
+        if (hasBattery()) {
             pins.digitalWritePin(FORWARD_PIN, 0)
             pins.digitalWritePin(BACKWARD_PIN, 1)
-            Force = Force - 1;
         }
-        if (isValid()) {
-            Force = 10
-        }
-
     }
     /** 
     *   Tobbie-II stops walking.
@@ -210,14 +198,10 @@ namespace TobbieII {
     function rightward() {
         pins.digitalWritePin(TURN_LEFT_PIN, 0)
         pins.digitalWritePin(TURN_RIGHT_PIN, 1)
-        Motor_L = false
-        Motor_R = true
     }
     function leftward() {
         pins.digitalWritePin(TURN_LEFT_PIN, 1)
         pins.digitalWritePin(TURN_RIGHT_PIN, 0)
-        Motor_L = true
-        Motor_R = false
     }
     /**
     *Tobbie-II stops rotating.
@@ -227,20 +211,8 @@ namespace TobbieII {
     //% group="Rotating"
     //% blockGap=3 weight=1
     export function stopRotation() {
-        if (Motor_L || Motor_R) {
-            if (Motor_R) {
-                leftward()
-            } else {
-                rightward()
-            }
-            basic.pause(50)
-        }
-        if (isValid()) {
-            pins.digitalWritePin(TURN_LEFT_PIN, 0)
-            pins.digitalWritePin(TURN_RIGHT_PIN, 0)
-            Motor_L = false
-            Motor_R = false
-        }
+        pins.digitalWritePin(TURN_LEFT_PIN, 0)
+        pins.digitalWritePin(TURN_RIGHT_PIN, 0)
     }
 
     /**
@@ -254,15 +226,12 @@ namespace TobbieII {
     //% advanced=true
     export function stamp(times: number): void {
         for (let i = 0; i < times; i++) {
-            pins.digitalWritePin(FORWARD_PIN, 1)  //向前
-            pins.digitalWritePin(BACKWARD_PIN, 0)
-            basic.pause(150)
-            pins.digitalWritePin(FORWARD_PIN, 0)  //向後
-            pins.digitalWritePin(BACKWARD_PIN, 1)
-            basic.pause(150)
+            forward();
+            basic.pause(150);
+            backward();
+            basic.pause(150);
         }
-        pins.digitalWritePin(FORWARD_PIN, 0)      //停止
-        pins.digitalWritePin(BACKWARD_PIN, 0)
+        stopWalk();
     }
     /**
        *Tobbie-II shakes his head for a certain number of times.
@@ -275,15 +244,12 @@ namespace TobbieII {
     //% advanced=true
     export function shake_head(times: number): void {
         for (let i = 0; i < times; i++) {
-            pins.digitalWritePin(TURN_LEFT_PIN, 1)  //左轉
-            pins.digitalWritePin(TURN_RIGHT_PIN, 0)
+            leftward();
             basic.pause(250)
-            pins.digitalWritePin(TURN_LEFT_PIN, 0)  //右轉
-            pins.digitalWritePin(TURN_RIGHT_PIN, 1)
+            rightward();
             basic.pause(250)
         }
-        pins.digitalWritePin(TURN_LEFT_PIN, 0)      //停止行走
-        pins.digitalWritePin(TURN_RIGHT_PIN, 0)
+        stopRotation();
     }
     /**
         *Tobbie-II repeats the dance for for a certain number of times.
@@ -296,21 +262,15 @@ namespace TobbieII {
     //% advanced=true
     export function dance(times: number): void {
         for (let i = 0; i < times; i++) {
-            pins.digitalWritePin(FORWARD_PIN, 0)  //向後
-            pins.digitalWritePin(BACKWARD_PIN, 1)
-            pins.digitalWritePin(TURN_LEFT_PIN, 0)  //右轉
-            pins.digitalWritePin(TURN_RIGHT_PIN, 1)
+            backward();
+            rightward();
             basic.pause(250)
-            pins.digitalWritePin(FORWARD_PIN, 1)  //向前
-            pins.digitalWritePin(BACKWARD_PIN, 0)
-            pins.digitalWritePin(TURN_LEFT_PIN, 1)  //左轉
-            pins.digitalWritePin(TURN_RIGHT_PIN, 0)
+            forward();
+            leftward();
             basic.pause(250)
         }
-        pins.digitalWritePin(FORWARD_PIN, 0)
-        pins.digitalWritePin(BACKWARD_PIN, 0)
-        pins.digitalWritePin(TURN_LEFT_PIN, 0)
-        pins.digitalWritePin(TURN_RIGHT_PIN, 0)
+        stopRotation();
+        stopWalk();
     }
 }
 
