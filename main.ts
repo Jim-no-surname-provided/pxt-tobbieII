@@ -1,4 +1,4 @@
-//% weight=0 color=#FF8B27 icon="\uf1b9" block="Tobbie"
+//% weight=0 color=#FF8B27 icon="\uf1b9" block="Tobbie II"
 //% groups=['Infrared sensors', 'Walking', 'Rotating']
 
 //uf1b9

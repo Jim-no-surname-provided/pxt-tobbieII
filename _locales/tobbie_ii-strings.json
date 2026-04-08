@@ -20,7 +20,7 @@
   "tobbieIIv2.walkTime|block": "walk %direction for %seconds seconds",
   "tobbieIIv2.walk|block": "walk %direction",
   "tobbieIIv2|block": "Tobbie",
-  "{id:category}TobbieIIv2": "TobbieIIv2",
+  "{id:category}TobbieIIv2": "Tobbie II",
   "{id:group}Infrared Sensor": "Infrared Sensor",
   "{id:group}Rotating": "Rotating",
   "{id:group}Walking": "Walking"
