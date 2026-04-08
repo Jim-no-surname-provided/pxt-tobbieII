@@ -1,6 +1,6 @@
 {
     "name": "TobbieII",
-    "version": "2.2.1",
+    "version": "2.2.2",
     "description": "Updated and translated Tobbie-II MakeCode extension",
     "license": "MIT",
     "dependencies": {
