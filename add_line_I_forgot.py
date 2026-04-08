@@ -80,7 +80,7 @@ import json
 from pathlib import Path
 
 for locale in LOCALES:
-    json_path = Path("_locales") / locale / "tobbieIIv2-strings.json"
+    json_path = Path("_locales") / locale / "tobbie_ii-strings.json"
 
     with json_path.open("r", encoding="utf-8") as f:
         data = json.load(f)

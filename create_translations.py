@@ -1489,14 +1489,14 @@ def main() -> None:
 
         if translation is not None:
             write_json(
-                locale_dir / "tobbieIIv2-strings.json",
+                locale_dir / "tobbie_ii-strings.json",
                 translation
             )
         else:
             print(f"no translate for language {locale}")
         if jsdoc_translation is not None:
             write_json(
-                locale_dir / "tobbieIIv2-jsdoc-strings.json",
+                locale_dir / "tobbie_ii-jsdoc-strings.json",
                 jsdoc_translation
             )
         else :
