@@ -1,0 +1,13 @@
+{
+  "tobbieIIv2.dance": "Tobbie-II ເຮັດການເຕັ້ນຊ້ຳຕາມຈຳນວນຄັ້ງທີ່ກຳນົດ.",
+  "tobbieIIv2.getIR": "ອ່ານຄ່າຈາກເຊັນເຊີ IR ທີ່ເລືອກ.",
+  "tobbieIIv2.isObstacle": "ກວດວ່າມີສິ່ງກີດຂວາງຢູ່ດ້ານທີ່ເລືອກຫຼືບໍ່.",
+  "tobbieIIv2.rotate": "ເລີ່ມໝຸນໄປທາງຊ້າຍຫຼືຂວາ.",
+  "tobbieIIv2.rotateTime": "ໝຸນເປັນເວລາທີ່ກຳນົດ.",
+  "tobbieIIv2.shake_head": "Tobbie-II ສັ່ນຫົວຕາມຈຳນວນຄັ້ງທີ່ກຳນົດ.",
+  "tobbieIIv2.stamp": "Tobbie-II ຢ່ຳຕີນຕາມຈຳນວນຄັ້ງທີ່ກຳນົດ.",
+  "tobbieIIv2.stopRotation": "Tobbie-II ຢຸດການໝຸນ.",
+  "tobbieIIv2.stopWalk": "Tobbie-II ຢຸດການເຄື່ອນໄຫວ.",
+  "tobbieIIv2.walk": "ໃຫ້ Tobbie-II ເລີ່ມເຄື່ອນໄຫວ.",
+  "tobbieIIv2.walkTime": "ໃຫ້ Tobbie-II ເຄື່ອນໄຫວເປັນເວລາທີ່ກຳນົດ."
+}

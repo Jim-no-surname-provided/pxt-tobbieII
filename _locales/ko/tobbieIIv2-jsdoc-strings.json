@@ -1,0 +1,13 @@
+{
+  "tobbieIIv2.dance": "Tobbie-II가 춤을 일정 횟수 반복합니다.",
+  "tobbieIIv2.getIR": "선택한 IR 센서 값을 읽습니다.",
+  "tobbieIIv2.isObstacle": "선택한 쪽에 장애물이 있는지 확인합니다.",
+  "tobbieIIv2.rotate": "왼쪽이나 오른쪽으로 회전하기 시작합니다.",
+  "tobbieIIv2.rotateTime": "일정 시간 동안 회전합니다.",
+  "tobbieIIv2.shake_head": "Tobbie-II가 머리를 일정 횟수 흔듭니다.",
+  "tobbieIIv2.stamp": "Tobbie-II가 발을 일정 횟수 구릅니다.",
+  "tobbieIIv2.stopRotation": "Tobbie-II가 회전을 멈춥니다.",
+  "tobbieIIv2.stopWalk": "움직임을 멈춥니다.",
+  "tobbieIIv2.walk": "Tobbie-II가 움직이기 시작하게 합니다.",
+  "tobbieIIv2.walkTime": "Tobbie-II를 일정 시간 움직이게 합니다."
+}

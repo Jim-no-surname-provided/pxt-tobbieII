@@ -1,8 +1,8 @@
-//% weight=0 color=#FF8B27 icon="\uf1b9" block="TobbieII"
+//% weight=0 color=#FF8B27 icon="\uf1b9" block="Tobbie"
 //% groups=['Infrared sensors', 'Walking', 'Rotating']
 
 //uf1b9
-namespace TobbieII {
+namespace tobbieIIv2 {
     const IR_LED_PIN = DigitalPin.P12;
 
     const IR_LEFT_PIN = AnalogPin.P2;
@@ -54,11 +54,11 @@ namespace TobbieII {
     /** 
      * Read the value sensed by the right side of the infrared sensor.
     */
-    //% blockId="getIR"
+    //% blockId="tobbieIIv2-infraredValue"
     //% block="%sensor IR sensor value "
     //% group="Infrared Sensor"
     //% blockGap=3 weight=1 
-    export function getIR(side: IRSide): number {
+    export function infraredValue(side: IRSide): number {
         if (!hasBattery()) {
             return 0
         }
@@ -92,21 +92,21 @@ namespace TobbieII {
         *@param side Left or right infrared sensor
         *@param sensitivity This controls the threshold between a true and false
         */
-    //% blockId="isObstacle"
+    //% blockId="tobbieIIv2-isObstacle"
     //% block="Is there an obstacle on the $side|| with $sensitivity sensitivity"
     //% group="Infrared Sensor"
-    //% sensitivity.defl=Sensitivity.Medium
+    //% sensitivity.defl=tobbie_ii.Sensitivity.Medium
     //% blockGap=3 weight=0
-    export function isObstacle(side: IRSide, sensitivity: Sensitivity): boolean {
-        return getIR(side) > sensitivity && hasBattery()
+    export function isObstacle(side: IRSide, sensitivity: Sensitivity = Sensitivity.Medium): boolean {
+        return infraredValue(side) > sensitivity && hasBattery()
     }
 
     /**
     *   Make TobbieII start walking.
     *   @param direction forward or backward
     */
-    //% blockId="walk"
-    //% block="Walk %direction"
+    //% blockId="tobbieIIv2-walk"
+    //% block="walk %direction"
     //% group="Walking"
     //% blockGap=3 weight=3
     export function walk(direction: MoveDirection) {
@@ -122,8 +122,8 @@ namespace TobbieII {
     *   @param direction forward or backward
     *   @param seconds The time in seconds Tobbie should walk for
     */
-    //% blockId="walk_seconds"
-    //% block="Walk %direction for %seconds seconds"
+    //% blockId="tobbieIIv2-walkTime"
+    //% block="walk %direction for %seconds seconds"
     //% group="Walking"
     //% blockGap=3 weight=2
     //% seconds.defl=1.5
@@ -155,28 +155,28 @@ namespace TobbieII {
     /** 
     *   Tobbie-II stops walking.
     */
-    //% blockId="stopwalk"
-    //% block="Stop moving"
+    //% blockId="tobbieIIv2-stopwalk"
+    //% block="stop moving"
     //% group="Walking"
     //% blockGap=3 weight=1
     export function stopWalk() {
-        pins.digitalWritePin(FORWARD_PIN, 0)
-        pins.digitalWritePin(BACKWARD_PIN, 0)
+        pins.digitalWritePin(FORWARD_PIN, 0);
+        pins.digitalWritePin(BACKWARD_PIN, 0);
     }
 
     /**
      * Start rotating to the right or to the left
      * @param direction Right or Left
      */
-    //% blockId="rotate"
-    //% block="Rotate to the %direction"
+    //% blockId="tobbieIIv2-rotate"
+    //% block="rotate to the %direction"
     //% group="Rotating"
     //% blockGap=3 weight=3
     export function rotate(direction: RotateDirection) {
         if (direction == RotateDirection.Right) {
-            rightward()
+            rightward();
         } else {
-            leftward()
+            leftward();
         }
     }
     /**
@@ -184,8 +184,8 @@ namespace TobbieII {
      * @param direction Right or Left
      * @param [seconds=1.5] Time in seconds Tobbie should Rotate for
      */
-    //% blockId="rotate_time"
-    //% block="Rotate to the %direction for %seconds seconds"
+    //% blockId="tobbieIIv2-rotateTime"
+    //% block="rotate to the %direction for %seconds seconds"
     //% group="Rotating"
     //% blockGap=3 weight=2
     //% seconds.defl=1.5
@@ -196,31 +196,31 @@ namespace TobbieII {
     }
 
     function rightward() {
-        pins.digitalWritePin(TURN_LEFT_PIN, 0)
-        pins.digitalWritePin(TURN_RIGHT_PIN, 1)
+        pins.digitalWritePin(TURN_LEFT_PIN, 0);
+        pins.digitalWritePin(TURN_RIGHT_PIN, 1);
     }
     function leftward() {
-        pins.digitalWritePin(TURN_LEFT_PIN, 1)
-        pins.digitalWritePin(TURN_RIGHT_PIN, 0)
+        pins.digitalWritePin(TURN_LEFT_PIN, 1);
+        pins.digitalWritePin(TURN_RIGHT_PIN, 0);
     }
     /**
     *Tobbie-II stops rotating.
     */
-    //% blockId="stopRotation"
-    //% block="Stop rotating"
+    //% blockId="tobbieIIv2-stopRotation"
+    //% block="stop rotating"
     //% group="Rotating"
     //% blockGap=3 weight=1
     export function stopRotation() {
-        pins.digitalWritePin(TURN_LEFT_PIN, 0)
-        pins.digitalWritePin(TURN_RIGHT_PIN, 0)
+        pins.digitalWritePin(TURN_LEFT_PIN, 0);
+        pins.digitalWritePin(TURN_RIGHT_PIN, 0);
     }
 
     /**
        *Tobbie-II stamps his foot for a certain number of times.
        *@param times the amount of times to stamp; eg. 5
        */
-    //% blockId="stamp"
-    //% block="Stamp %time| times"
+    //% blockId="tobbieIIv2-stamp"
+    //% block="stamp %time| times"
     //% time.min=1 time.max=100
     //% blockGap=3 weight=4
     //% advanced=true
@@ -237,17 +237,17 @@ namespace TobbieII {
        *Tobbie-II shakes his head for a certain number of times.
        *@param times the amount of times to shake the head; eg. 5
        */
-    //% blockId="shake_head"
-    //% block="Shake head %time| times"
+    //% blockId="tobbieIIv2-shakeHead"
+    //% block="shake head %time| times"
     //% time.min=1 time.max=100
     //% blockGap=3 weight=3
     //% advanced=true
-    export function shake_head(times: number): void {
+    export function shakeHead(times: number): void {
         for (let i = 0; i < times; i++) {
             leftward();
-            basic.pause(250)
+            basic.pause(250);
             rightward();
-            basic.pause(250)
+            basic.pause(250);
         }
         stopRotation();
     }
@@ -255,8 +255,8 @@ namespace TobbieII {
         *Tobbie-II repeats the dance for for a certain number of times.
         *@param times the amount of times to dance; eg. 5
         */
-    //% blockId="dance"
-    //% block="Dance %time| times"
+    //% blockId="tobbieIIv2-dance"
+    //% block="dance %time| times"
     //% time.min=1 time.max=100
     //% blockGap=3 weight=2
     //% advanced=true
@@ -264,10 +264,10 @@ namespace TobbieII {
         for (let i = 0; i < times; i++) {
             backward();
             rightward();
-            basic.pause(250)
+            basic.pause(250);
             forward();
             leftward();
-            basic.pause(250)
+            basic.pause(250);
         }
         stopRotation();
         stopWalk();

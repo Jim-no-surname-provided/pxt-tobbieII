@@ -1,0 +1,13 @@
+{
+  "tobbieIIv2.dance": "Tobbie-II powtarza taniec określoną liczbę razy.",
+  "tobbieIIv2.getIR": "Odczytuje wartość z wybranego czujnika podczerwieni.",
+  "tobbieIIv2.isObstacle": "Określa, czy po wybranej stronie znajduje się przeszkoda.",
+  "tobbieIIv2.rotate": "Rozpoczyna obrót w prawo lub w lewo.",
+  "tobbieIIv2.rotateTime": "Rozpoczyna obrót w prawo lub w lewo na określony czas.",
+  "tobbieIIv2.shake_head": "Tobbie-II potrząsa głową określoną liczbę razy.",
+  "tobbieIIv2.stamp": "Tobbie-II tupie określoną liczbę razy.",
+  "tobbieIIv2.stopRotation": "Tobbie-II przestaje się obracać.",
+  "tobbieIIv2.stopWalk": "Tobbie-II przestaje się poruszać.",
+  "tobbieIIv2.walk": "Sprawia, że Tobbie-II zaczyna się poruszać.",
+  "tobbieIIv2.walkTime": "Sprawia, że Tobbie-II porusza się przez określony czas."
+}

@@ -1,0 +1,13 @@
+{
+  "tobbieIIv2.dance": "Tobbie-II herhaalt de dans een bepaald aantal keer.",
+  "tobbieIIv2.getIR": "Leest de waarde van de geselecteerde IR-sensor.",
+  "tobbieIIv2.isObstacle": "Bepaalt of er een obstakel aan de gekozen kant is.",
+  "tobbieIIv2.rotate": "Begint naar links of rechts te draaien.",
+  "tobbieIIv2.rotateTime": "Draait gedurende een bepaalde tijd.",
+  "tobbieIIv2.shake_head": "Tobbie-II schudt een bepaald aantal keer met zijn hoofd.",
+  "tobbieIIv2.stamp": "Tobbie-II stampt een bepaald aantal keer met zijn voet.",
+  "tobbieIIv2.stopRotation": "Tobbie-II stopt met draaien.",
+  "tobbieIIv2.stopWalk": "Tobbie-II stopt met bewegen.",
+  "tobbieIIv2.walk": "Laat Tobbie-II beginnen met bewegen.",
+  "tobbieIIv2.walkTime": "Laat Tobbie-II gedurende een bepaalde tijd bewegen."
+}

@@ -1,0 +1,13 @@
+{
+  "tobbieIIv2.dance": "A Tobbie-II többször megismétli a táncot.",
+  "tobbieIIv2.getIR": "Kiolvassa az IR érzékelő értékét.",
+  "tobbieIIv2.isObstacle": "Ellenőrzi, van-e akadály.",
+  "tobbieIIv2.rotate": "Elkezdi a forgást.",
+  "tobbieIIv2.rotateTime": "Egy meghatározott ideig forog.",
+  "tobbieIIv2.shake_head": "A Tobbie-II többször megrázza a fejét.",
+  "tobbieIIv2.stamp": "A Tobbie-II többször dobbant a lábával.",
+  "tobbieIIv2.stopRotation": "A Tobbie-II leáll a forgással.",
+  "tobbieIIv2.stopWalk": "Leállítja a mozgást.",
+  "tobbieIIv2.walk": "Elindítja Tobbie-II mozgását.",
+  "tobbieIIv2.walkTime": "Egy meghatározott ideig mozgatja Tobbie-II-t."
+}

@@ -1,0 +1,13 @@
+{
+  "tobbieIIv2.dance": "Tobbie-II repete a dança um certo número de vezes.",
+  "tobbieIIv2.getIR": "Lê o valor detectado pelo sensor infravermelho selecionado.",
+  "tobbieIIv2.isObstacle": "Determina se há um obstáculo no lado selecionado.",
+  "tobbieIIv2.rotate": "Começa a girar para a direita ou para a esquerda.",
+  "tobbieIIv2.rotateTime": "Começa a girar para a direita ou para a esquerda por um certo tempo.",
+  "tobbieIIv2.shake_head": "Tobbie-II balança a cabeça um certo número de vezes.",
+  "tobbieIIv2.stamp": "Tobbie-II bate o pé um certo número de vezes.",
+  "tobbieIIv2.stopRotation": "Tobbie-II para de girar.",
+  "tobbieIIv2.stopWalk": "Tobbie-II para de andar.",
+  "tobbieIIv2.walk": "Faz Tobbie-II começar a andar.",
+  "tobbieIIv2.walkTime": "Faz Tobbie-II andar por um certo tempo."
+}

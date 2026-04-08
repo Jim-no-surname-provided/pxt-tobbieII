@@ -1,0 +1,13 @@
+{
+  "tobbieIIv2.dance": "Tobbie-II ojapo jey jey jeroky heta jey.",
+  "tobbieIIv2.getIR": "Olee pe valor ohecháva pe sensor IR ojeporavóva.",
+  "tobbieIIv2.isObstacle": "Ohecha oĩpa peteĩ mba'e ojokóva pe lado ojeporavóvape.",
+  "tobbieIIv2.rotate": "Oñepyrũ ojere akatúa térã asu gotyo.",
+  "tobbieIIv2.rotateTime": "Ojere peteĩ sapy'a hag̃ua.",
+  "tobbieIIv2.shake_head": "Tobbie-II omongu'e iñakã heta jey.",
+  "tobbieIIv2.stamp": "Tobbie-II opyrũ hatã heta jey.",
+  "tobbieIIv2.stopRotation": "Tobbie-II opyta ojere'ỹre.",
+  "tobbieIIv2.stopWalk": "Tobbie-II opyta oku'e'ỹre.",
+  "tobbieIIv2.walk": "Ojapo Tobbie-II oñepyrũ hag̃ua oku'e.",
+  "tobbieIIv2.walkTime": "Ojapo Tobbie-II oku'e hag̃ua peteĩ sapy'a."
+}

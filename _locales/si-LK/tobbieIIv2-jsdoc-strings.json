@@ -1,0 +1,13 @@
+{
+  "tobbieIIv2.dance": "Tobbie-II නියමිත වාර ගණනක් නර්තනය නැවත කරයි.",
+  "tobbieIIv2.getIR": "තෝරාගත් IR සංවේදකයේ අගය කියවයි.",
+  "tobbieIIv2.isObstacle": "තෝරාගත් පැත්තේ බාධාවක් තිබේදැයි තීරණය කරයි.",
+  "tobbieIIv2.rotate": "දකුණට හෝ වමට හැරෙන්න පටන් ගනී.",
+  "tobbieIIv2.rotateTime": "නියමිත කාලයක් හැරේ.",
+  "tobbieIIv2.shake_head": "Tobbie-II නියමිත වාර ගණනක් හිස කම්පා කරයි.",
+  "tobbieIIv2.stamp": "Tobbie-II නියමිත වාර ගණනක් පාද ගසයි.",
+  "tobbieIIv2.stopRotation": "Tobbie-II හැරීම නවත්වයි.",
+  "tobbieIIv2.stopWalk": "Tobbie-II චලනය නවත්වයි.",
+  "tobbieIIv2.walk": "Tobbie-II චලනය ආරම්භ කරවයි.",
+  "tobbieIIv2.walkTime": "Tobbie-II නියමිත කාලයක් චලනය කරවයි."
+}

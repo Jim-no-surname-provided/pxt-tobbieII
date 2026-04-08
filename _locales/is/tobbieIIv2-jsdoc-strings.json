@@ -1,0 +1,13 @@
+{
+  "tobbieIIv2.dance": "Tobbie-II endurtekur dansinn ákveðið oft.",
+  "tobbieIIv2.getIR": "Les gildi valins IR skynjara.",
+  "tobbieIIv2.isObstacle": "Athugar hvort hindrun sé á valinni hlið.",
+  "tobbieIIv2.rotate": "Byrjar að snúa til hægri eða vinstri.",
+  "tobbieIIv2.rotateTime": "Snýst í ákveðinn tíma.",
+  "tobbieIIv2.shake_head": "Tobbie-II hristir höfuðið ákveðið oft.",
+  "tobbieIIv2.stamp": "Tobbie-II stappar niður fæti ákveðið oft.",
+  "tobbieIIv2.stopRotation": "Tobbie-II hættir að snúast.",
+  "tobbieIIv2.stopWalk": "Tobbie-II hættir að hreyfa sig.",
+  "tobbieIIv2.walk": "Lætur Tobbie-II byrja að hreyfa sig.",
+  "tobbieIIv2.walkTime": "Lætur Tobbie-II hreyfa sig í ákveðinn tíma."
+}

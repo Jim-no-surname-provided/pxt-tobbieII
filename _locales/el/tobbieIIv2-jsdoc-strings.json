@@ -1,0 +1,13 @@
+{
+  "tobbieIIv2.dance": "Το Tobbie-II επαναλαμβάνει τον χορό συγκεκριμένες φορές.",
+  "tobbieIIv2.getIR": "Διαβάζει την τιμή από τον επιλεγμένο αισθητήρα IR.",
+  "tobbieIIv2.isObstacle": "Ελέγχει αν υπάρχει εμπόδιο.",
+  "tobbieIIv2.rotate": "Ξεκινά να περιστρέφεται.",
+  "tobbieIIv2.rotateTime": "Περιστρέφεται για συγκεκριμένο χρόνο.",
+  "tobbieIIv2.shake_head": "Το Tobbie-II κουνά το κεφάλι του συγκεκριμένες φορές.",
+  "tobbieIIv2.stamp": "Το Tobbie-II χτυπά το πόδι του συγκεκριμένες φορές.",
+  "tobbieIIv2.stopRotation": "Σταματά να περιστρέφεται.",
+  "tobbieIIv2.stopWalk": "Σταματά την κίνηση.",
+  "tobbieIIv2.walk": "Κάνει το Tobbie-II να ξεκινήσει να κινείται.",
+  "tobbieIIv2.walkTime": "Κάνει το Tobbie-II να κινείται για συγκεκριμένο χρόνο."
+}

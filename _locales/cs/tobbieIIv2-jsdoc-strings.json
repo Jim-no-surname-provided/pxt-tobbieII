@@ -1,0 +1,13 @@
+{
+  "tobbieIIv2.dance": "Tobbie-II opakuje tanec určitý početkrát.",
+  "tobbieIIv2.getIR": "Čte hodnotu z vybraného IR senzoru.",
+  "tobbieIIv2.isObstacle": "Určuje, zda je na zvolené straně překážka.",
+  "tobbieIIv2.rotate": "Začne se otáčet doleva nebo doprava.",
+  "tobbieIIv2.rotateTime": "Otáčí se doleva nebo doprava po určitou dobu.",
+  "tobbieIIv2.shake_head": "Tobbie-II určitý početkrát zatřese hlavou.",
+  "tobbieIIv2.stamp": "Tobbie-II určitý početkrát dupne.",
+  "tobbieIIv2.stopRotation": "Tobbie-II přestane rotovat.",
+  "tobbieIIv2.stopWalk": "Tobbie-II přestane chodit.",
+  "tobbieIIv2.walk": "Spustí chůzi Tobbie-II.",
+  "tobbieIIv2.walkTime": "Nechá Tobbie-II chodit po určitou dobu."
+}

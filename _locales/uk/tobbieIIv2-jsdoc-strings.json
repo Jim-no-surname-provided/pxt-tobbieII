@@ -1,0 +1,13 @@
+{
+  "tobbieIIv2.dance": "Tobbie-II повторює танець певну кількість разів.",
+  "tobbieIIv2.getIR": "Зчитує значення з вибраного ІЧ-датчика.",
+  "tobbieIIv2.isObstacle": "Визначає, чи є перешкода з вибраного боку.",
+  "tobbieIIv2.rotate": "Починає обертатися праворуч або ліворуч.",
+  "tobbieIIv2.rotateTime": "Починає обертатися праворуч або ліворуч протягом певного часу.",
+  "tobbieIIv2.shake_head": "Tobbie-II хитає головою певну кількість разів.",
+  "tobbieIIv2.stamp": "Tobbie-II тупає ногою певну кількість разів.",
+  "tobbieIIv2.stopRotation": "Tobbie-II припиняє обертатися.",
+  "tobbieIIv2.stopWalk": "Tobbie-II припиняє рухатися.",
+  "tobbieIIv2.walk": "Запускає рух Tobbie-II.",
+  "tobbieIIv2.walkTime": "Змушує Tobbie-II рухатися протягом певного часу."
+}

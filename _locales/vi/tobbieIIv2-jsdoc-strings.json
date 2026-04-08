@@ -1,0 +1,13 @@
+{
+  "tobbieIIv2.dance": "Tobbie-II lặp lại điệu nhảy nhiều lần.",
+  "tobbieIIv2.getIR": "Đọc giá trị cảm biến IR.",
+  "tobbieIIv2.isObstacle": "Kiểm tra có vật cản không.",
+  "tobbieIIv2.rotate": "Bắt đầu xoay.",
+  "tobbieIIv2.rotateTime": "Xoay trong một khoảng thời gian nhất định.",
+  "tobbieIIv2.shake_head": "Tobbie-II lắc đầu nhiều lần.",
+  "tobbieIIv2.stamp": "Tobbie-II dậm chân nhiều lần.",
+  "tobbieIIv2.stopRotation": "Tobbie-II dừng xoay.",
+  "tobbieIIv2.stopWalk": "Dừng di chuyển.",
+  "tobbieIIv2.walk": "Làm cho Tobbie-II bắt đầu di chuyển.",
+  "tobbieIIv2.walkTime": "Làm cho Tobbie-II di chuyển trong một khoảng thời gian."
+}

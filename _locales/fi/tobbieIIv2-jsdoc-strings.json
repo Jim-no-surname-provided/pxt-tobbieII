@@ -1,0 +1,13 @@
+{
+  "tobbieIIv2.dance": "Tobbie-II toistaa tanssin tietyn määrän kertoja.",
+  "tobbieIIv2.getIR": "Lukee valitun IR-anturin arvon.",
+  "tobbieIIv2.isObstacle": "Määrittää, onko valitulla puolella este.",
+  "tobbieIIv2.rotate": "Aloittaa kääntymisen oikealle tai vasemmalle.",
+  "tobbieIIv2.rotateTime": "Kääntyy tietyn ajan.",
+  "tobbieIIv2.shake_head": "Tobbie-II ravistaa päätään tietyn määrän kertoja.",
+  "tobbieIIv2.stamp": "Tobbie-II tömistää jalkaansa tietyn määrän kertoja.",
+  "tobbieIIv2.stopRotation": "Tobbie-II lopettaa kääntymisen.",
+  "tobbieIIv2.stopWalk": "Tobbie-II lopettaa liikkumisen.",
+  "tobbieIIv2.walk": "Saa Tobbie-II:n lähtemään liikkeelle.",
+  "tobbieIIv2.walkTime": "Saa Tobbie-II:n liikkumaan tietyn ajan."
+}

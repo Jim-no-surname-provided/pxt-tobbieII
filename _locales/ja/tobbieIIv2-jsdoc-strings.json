@@ -1,0 +1,13 @@
+{
+  "tobbieIIv2.dance": "Tobbie-II はダンスを一定回数くり返します。",
+  "tobbieIIv2.getIR": "選択した IR センサーの値を読み取ります。",
+  "tobbieIIv2.isObstacle": "選択した側に障害物があるかどうかを判定します。",
+  "tobbieIIv2.rotate": "左右どちらかに回転し始めます。",
+  "tobbieIIv2.rotateTime": "一定時間、左右どちらかに回転します。",
+  "tobbieIIv2.shake_head": "Tobbie-II が頭を一定回数振ります。",
+  "tobbieIIv2.stamp": "Tobbie-II が足踏みを一定回数行います。",
+  "tobbieIIv2.stopRotation": "Tobbie-II が回転を止めます。",
+  "tobbieIIv2.stopWalk": "Tobbie-II が動きを止めます。",
+  "tobbieIIv2.walk": "Tobbie-II を動かし始めます。",
+  "tobbieIIv2.walkTime": "Tobbie-II を一定時間動かします。"
+}

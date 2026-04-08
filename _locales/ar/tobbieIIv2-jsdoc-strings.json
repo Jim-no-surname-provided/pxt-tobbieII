@@ -1,0 +1,13 @@
+{
+  "tobbieIIv2.dance": "يكرر Tobbie-II الرقصة عددًا معينًا من المرات.",
+  "tobbieIIv2.getIR": "يقرأ قيمة مستشعر الأشعة تحت الحمراء المحدد.",
+  "tobbieIIv2.isObstacle": "يحدد ما إذا كانت هناك عقبة على الجانب المحدد.",
+  "tobbieIIv2.rotate": "يبدأ بالدوران إلى اليمين أو إلى اليسار.",
+  "tobbieIIv2.rotateTime": "يدور إلى اليمين أو اليسار لمدة محددة.",
+  "tobbieIIv2.shake_head": "يهز Tobbie-II رأسه عددًا معينًا من المرات.",
+  "tobbieIIv2.stamp": "يضرب Tobbie-II الأرض بقدمه عددًا معينًا من المرات.",
+  "tobbieIIv2.stopRotation": "يتوقف Tobbie-II عن الدوران.",
+  "tobbieIIv2.stopWalk": "يتوقف Tobbie-II عن الحركة.",
+  "tobbieIIv2.walk": "يجعل Tobbie-II يبدأ بالحركة.",
+  "tobbieIIv2.walkTime": "يجعل Tobbie-II يتحرك لمدة محددة."
+}

@@ -1,0 +1,13 @@
+{
+  "tobbieIIv2.dance": "Tobbie-II חוזר על הריקוד מספר פעמים.",
+  "tobbieIIv2.getIR": "קורא את ערך חיישן ה-IR.",
+  "tobbieIIv2.isObstacle": "בודק אם יש מכשול.",
+  "tobbieIIv2.rotate": "מתחיל להסתובב.",
+  "tobbieIIv2.rotateTime": "מסתובב למשך זמן מסוים.",
+  "tobbieIIv2.shake_head": "Tobbie-II מנענע את הראש מספר פעמים.",
+  "tobbieIIv2.stamp": "Tobbie-II רוקע ברגל מספר פעמים.",
+  "tobbieIIv2.stopRotation": "Tobbie-II מפסיק להסתובב.",
+  "tobbieIIv2.stopWalk": "עוצר תנועה.",
+  "tobbieIIv2.walk": "גורם ל-Tobbie-II להתחיל לזוז.",
+  "tobbieIIv2.walkTime": "גורם ל-Tobbie-II לזוז למשך זמן מסוים."
+}

@@ -1,0 +1,13 @@
+{
+  "tobbieIIv2.dance": "Tobbie-II повторяет танец несколько раз.",
+  "tobbieIIv2.getIR": "Считывает значение ИК датчика.",
+  "tobbieIIv2.isObstacle": "Проверяет наличие препятствия.",
+  "tobbieIIv2.rotate": "Начинает вращение.",
+  "tobbieIIv2.rotateTime": "Вращается заданное время.",
+  "tobbieIIv2.shake_head": "Tobbie-II качает головой несколько раз.",
+  "tobbieIIv2.stamp": "Tobbie-II топает ногой несколько раз.",
+  "tobbieIIv2.stopRotation": "Tobbie-II прекращает вращение.",
+  "tobbieIIv2.stopWalk": "Останавливает движение.",
+  "tobbieIIv2.walk": "Запускает движение Tobbie-II.",
+  "tobbieIIv2.walkTime": "Заставляет Tobbie-II двигаться заданное время."
+}

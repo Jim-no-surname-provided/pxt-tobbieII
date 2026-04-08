@@ -1,0 +1,13 @@
+{
+  "tobbieIIv2.dance": "Mae Tobbie-II yn ailadrodd y ddawns nifer penodol o weithiau.",
+  "tobbieIIv2.getIR": "Yn darllen gwerth y synhwyrydd IR a ddewiswyd.",
+  "tobbieIIv2.isObstacle": "Yn penderfynu a oes rhwystr ar yr ochr a ddewiswyd.",
+  "tobbieIIv2.rotate": "Yn dechrau troi i'r dde neu i'r chwith.",
+  "tobbieIIv2.rotateTime": "Yn troi am gyfnod penodol.",
+  "tobbieIIv2.shake_head": "Mae Tobbie-II yn ysgwyd ei ben nifer penodol o weithiau.",
+  "tobbieIIv2.stamp": "Mae Tobbie-II yn stampio ei droed nifer penodol o weithiau.",
+  "tobbieIIv2.stopRotation": "Mae Tobbie-II yn stopio troi.",
+  "tobbieIIv2.stopWalk": "Mae Tobbie-II yn stopio symud.",
+  "tobbieIIv2.walk": "Yn gwneud i Tobbie-II ddechrau cerdded.",
+  "tobbieIIv2.walkTime": "Yn gwneud i Tobbie-II gerdded am gyfnod penodol."
+}
