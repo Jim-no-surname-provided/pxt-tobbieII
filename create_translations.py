@@ -629,7 +629,7 @@ TRANSLATIONS = {
         "tobbieIIv2.Sensitivity.Medium|block": "media",
         "tobbieIIv2.dance|block": "baila %time| veces",
         "tobbieIIv2.getIR|block": "valor del sensor IR %sensor ",
-        "tobbieIIv2.isObstacle|block": "¿hay un obstáculo a la $side|| con sensibilidad $sensitivity?",
+        "tobbieIIv2.isObstacle|block": "hay un obstáculo a la $side|| con sensibilidad $sensitivity",
         "tobbieIIv2.rotateTime|block": "gira a la %direction durante %seconds segundos",
         "tobbieIIv2.rotate|block": "gira a la %direction",
         "tobbieIIv2.shake_head|block": "sacude la cabeza %time| veces",
