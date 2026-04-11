@@ -1,4 +1,4 @@
-//% weight=0 color=#FF8B27 icon="\uf1b9" block="Tobbie II"
+//% weight=0 color=#C85208 icon="\uf1b9" block="Tobbie II"
 //% groups=['Infrared sensors', 'Walking', 'Rotating']
 
 //uf1b9
@@ -93,9 +93,9 @@ namespace tobbieIIv2 {
         *@param sensitivity This controls the threshold between a true and false
         */
     //% blockId="tobbieIIv2-isObstacle"
-    //% block="Is there an obstacle on the $side|| with $sensitivity sensitivity"
+    //% block="is there an obstacle on the $side|| with $sensitivity sensitivity"
     //% group="Infrared Sensor"
-    //% sensitivity.defl=tobbie_ii.Sensitivity.Medium
+    //% sensitivity.defl=tobbieIIv2.Sensitivity.Medium
     //% blockGap=3 weight=0
     export function isObstacle(side: IRSide, sensitivity: Sensitivity = Sensitivity.Medium): boolean {
         return infraredValue(side) > sensitivity && hasBattery()
