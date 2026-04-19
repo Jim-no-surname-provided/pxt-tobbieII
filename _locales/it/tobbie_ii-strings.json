@@ -9,7 +9,7 @@
   "tobbieIIv2.Sensitivity.Low|block": "bassa",
   "tobbieIIv2.Sensitivity.Medium|block": "media",
   "tobbieIIv2.dance|block": "balla %time| volte",
-  "tobbieIIv2.getIR|block": "valore del sensore IR %sensor ",
+  "tobbieIIv2.infraredValue|block": "valore del sensore IR %sensor ",
   "tobbieIIv2.isObstacle|block": "c'è un ostacolo sul lato $side|| con sensibilità $sensitivity",
   "tobbieIIv2.rotateTime|block": "ruota a %direction per %seconds secondi",
   "tobbieIIv2.rotate|block": "ruota a %direction",

@@ -9,7 +9,7 @@
   "tobbieIIv2.Sensitivity.Low|block": "düşük",
   "tobbieIIv2.Sensitivity.Medium|block": "orta",
   "tobbieIIv2.dance|block": "%time| kez dans et",
-  "tobbieIIv2.getIR|block": "%sensor IR sensör değeri ",
+  "tobbieIIv2.infraredValue|block": "%sensor IR sensör değeri ",
   "tobbieIIv2.isObstacle|block": "$side tarafında engel var mı|| hassasiyet $sensitivity",
   "tobbieIIv2.rotateTime|block": "%direction yönünde %seconds saniye dön",
   "tobbieIIv2.rotate|block": "%direction yönünde dön",

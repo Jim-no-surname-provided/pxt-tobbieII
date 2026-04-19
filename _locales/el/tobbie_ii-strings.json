@@ -9,7 +9,7 @@
   "tobbieIIv2.Sensitivity.Low|block": "χαμηλή",
   "tobbieIIv2.Sensitivity.Medium|block": "μεσαία",
   "tobbieIIv2.dance|block": "χόρεψε %time| φορές",
-  "tobbieIIv2.getIR|block": "τιμή αισθητήρα IR %sensor ",
+  "tobbieIIv2.infraredValue|block": "τιμή αισθητήρα IR %sensor ",
   "tobbieIIv2.isObstacle|block": "υπάρχει εμπόδιο στο $side|| με ευαισθησία $sensitivity",
   "tobbieIIv2.rotateTime|block": "περιστροφή προς %direction για %seconds δευτερόλεπτα",
   "tobbieIIv2.rotate|block": "περιστροφή προς %direction",

@@ -9,7 +9,7 @@
   "tobbieIIv2.Sensitivity.Low|block": "nízka",
   "tobbieIIv2.Sensitivity.Medium|block": "stredná",
   "tobbieIIv2.dance|block": "tancuj %time| krát",
-  "tobbieIIv2.getIR|block": "hodnota IR senzora %sensor ",
+  "tobbieIIv2.infraredValue|block": "hodnota IR senzora %sensor ",
   "tobbieIIv2.isObstacle|block": "je na $side prekážka|| s citlivosťou $sensitivity",
   "tobbieIIv2.rotateTime|block": "otáčaj sa %direction %seconds sekúnd",
   "tobbieIIv2.rotate|block": "otáčaj sa %direction",

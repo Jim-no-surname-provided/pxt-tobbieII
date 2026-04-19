@@ -129,7 +129,7 @@ namespace tobbieIIv2 {
     //% seconds.defl=1.5
     export function walkTime(direction: MoveDirection, seconds: number) {
         walk(direction);
-        basic.pause(seconds / 1000);
+        basic.pause(seconds * 1000);
         stopWalk();
     }
 
@@ -191,7 +191,7 @@ namespace tobbieIIv2 {
     //% seconds.defl=1.5
     export function rotateTime(direction: RotateDirection, seconds: number = 1.5) {
         rotate(direction);
-        basic.pause(seconds);
+        basic.pause(seconds * 1000);
         stopRotation();
     }
 

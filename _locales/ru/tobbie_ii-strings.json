@@ -9,7 +9,7 @@
   "tobbieIIv2.Sensitivity.Low|block": "низкая",
   "tobbieIIv2.Sensitivity.Medium|block": "средняя",
   "tobbieIIv2.dance|block": "танцуй %time| раз",
-  "tobbieIIv2.getIR|block": "значение ИК датчика %sensor ",
+  "tobbieIIv2.infraredValue|block": "значение ИК датчика %sensor ",
   "tobbieIIv2.isObstacle|block": "есть ли препятствие на $side|| с чувствительностью $sensitivity",
   "tobbieIIv2.rotateTime|block": "поворачивайся %direction %seconds секунд",
   "tobbieIIv2.rotate|block": "поворачивайся %direction",

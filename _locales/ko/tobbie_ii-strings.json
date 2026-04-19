@@ -9,7 +9,7 @@
   "tobbieIIv2.Sensitivity.Low|block": "낮음",
   "tobbieIIv2.Sensitivity.Medium|block": "보통",
   "tobbieIIv2.dance|block": "%time| 번 춤추기",
-  "tobbieIIv2.getIR|block": "%sensor IR 센서 값",
+  "tobbieIIv2.infraredValue|block": "%sensor IR 센서 값",
   "tobbieIIv2.isObstacle|block": "$side 에 장애물이 있나요|| 민감도 $sensitivity",
   "tobbieIIv2.rotateTime|block": "%direction 으로 %seconds 초 동안 회전하기",
   "tobbieIIv2.rotate|block": "%direction 으로 회전하기",

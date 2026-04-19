@@ -9,7 +9,7 @@
   "tobbieIIv2.Sensitivity.Low|block": "laag",
   "tobbieIIv2.Sensitivity.Medium|block": "gemiddeld",
   "tobbieIIv2.dance|block": "dans %time| keer",
-  "tobbieIIv2.getIR|block": "ir-sensorwaarde %sensor",
+  "tobbieIIv2.infraredValue|block": "ir-sensorwaarde %sensor",
   "tobbieIIv2.isObstacle|block": "is er een obstakel aan de $side|| met gevoeligheid $sensitivity",
   "tobbieIIv2.rotateTime|block": "draai %direction voor %seconds seconden",
   "tobbieIIv2.rotate|block": "draai %direction",

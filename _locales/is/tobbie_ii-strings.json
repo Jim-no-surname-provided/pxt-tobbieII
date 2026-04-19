@@ -9,7 +9,7 @@
   "tobbieIIv2.Sensitivity.Low|block": "lág",
   "tobbieIIv2.Sensitivity.Medium|block": "miðlungs",
   "tobbieIIv2.dance|block": "dansa %time| sinnum",
-  "tobbieIIv2.getIR|block": "gildi IR skynjara %sensor ",
+  "tobbieIIv2.infraredValue|block": "gildi IR skynjara %sensor ",
   "tobbieIIv2.isObstacle|block": "er hindrun á $side|| með næmni $sensitivity",
   "tobbieIIv2.rotateTime|block": "snúðu %direction í %seconds sekúndur",
   "tobbieIIv2.rotate|block": "snúðu %direction",

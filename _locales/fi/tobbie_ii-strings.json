@@ -9,7 +9,7 @@
   "tobbieIIv2.Sensitivity.Low|block": "matala",
   "tobbieIIv2.Sensitivity.Medium|block": "keskitaso",
   "tobbieIIv2.dance|block": "tanssi %time| kertaa",
-  "tobbieIIv2.getIR|block": "%sensor IR-anturin arvo ",
+  "tobbieIIv2.infraredValue|block": "%sensor IR-anturin arvo ",
   "tobbieIIv2.isObstacle|block": "onko $side puolella este|| herkkyydellä $sensitivity",
   "tobbieIIv2.rotateTime|block": "käänny %direction %seconds sekunnin ajan",
   "tobbieIIv2.rotate|block": "käänny %direction",
