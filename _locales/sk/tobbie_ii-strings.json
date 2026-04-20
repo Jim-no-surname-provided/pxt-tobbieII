@@ -13,7 +13,7 @@
   "tobbieIIv2.isObstacle|block": "je na $side prekážka|| s citlivosťou $sensitivity",
   "tobbieIIv2.rotateTime|block": "otáčaj sa %direction %seconds sekúnd",
   "tobbieIIv2.rotate|block": "otáčaj sa %direction",
-  "tobbieIIv2.shake_head|block": "zatrias hlavou %time| krát",
+  "tobbieIIv2.shakeHead|block": "zatrias hlavou %time| krát",
   "tobbieIIv2.stopRotation|block": "zastav otáčanie",
   "tobbieIIv2.stopWalk|block": "zastav pohyb",
   "tobbieIIv2.walkTime|block": "choď %direction %seconds sekúnd",

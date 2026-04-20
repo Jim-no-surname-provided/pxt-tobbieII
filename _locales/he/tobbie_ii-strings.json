@@ -13,7 +13,7 @@
   "tobbieIIv2.isObstacle|block": "האם יש מכשול ב-$side|| עם רגישות $sensitivity",
   "tobbieIIv2.rotateTime|block": "הסתובב ל-%direction למשך %seconds שניות",
   "tobbieIIv2.rotate|block": "הסתובב ל-%direction",
-  "tobbieIIv2.shake_head|block": "נענע את הראש %time| פעמים",
+  "tobbieIIv2.shakeHead|block": "נענע את הראש %time| פעמים",
   "tobbieIIv2.stopRotation|block": "עצור סיבוב",
   "tobbieIIv2.stopWalk|block": "עצור תנועה",
   "tobbieIIv2.walkTime|block": "לך %direction למשך %seconds שניות",

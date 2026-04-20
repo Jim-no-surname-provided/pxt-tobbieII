@@ -13,7 +13,7 @@
   "tobbieIIv2.isObstacle|block": "$side tarafında engel var mı|| hassasiyet $sensitivity",
   "tobbieIIv2.rotateTime|block": "%direction yönünde %seconds saniye dön",
   "tobbieIIv2.rotate|block": "%direction yönünde dön",
-  "tobbieIIv2.shake_head|block": "%time| kez başını salla",
+  "tobbieIIv2.shakeHead|block": "%time| kez başını salla",
   "tobbieIIv2.stopRotation|block": "dönmeyi durdur",
   "tobbieIIv2.stopWalk|block": "hareketi durdur",
   "tobbieIIv2.walkTime|block": "%direction yönünde %seconds saniye yürü",

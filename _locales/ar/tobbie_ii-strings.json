@@ -13,7 +13,7 @@
   "tobbieIIv2.isObstacle|block": "هل توجد عقبة على $side|| بحساسية $sensitivity",
   "tobbieIIv2.rotateTime|block": "استدر نحو %direction لمدة %seconds ثانية",
   "tobbieIIv2.rotate|block": "استدر نحو %direction",
-  "tobbieIIv2.shake_head|block": "حرّك الرأس %time| مرات",
+  "tobbieIIv2.shakeHead|block": "حرّك الرأس %time| مرات",
   "tobbieIIv2.stopRotation|block": "أوقف الدوران",
   "tobbieIIv2.stopWalk|block": "أوقف الحركة",
   "tobbieIIv2.walkTime|block": "تحرك %direction لمدة %seconds ثانية",

@@ -13,7 +13,7 @@
   "tobbieIIv2.isObstacle|block": "er hindrun á $side|| með næmni $sensitivity",
   "tobbieIIv2.rotateTime|block": "snúðu %direction í %seconds sekúndur",
   "tobbieIIv2.rotate|block": "snúðu %direction",
-  "tobbieIIv2.shake_head|block": "hristu höfuð %time| sinnum",
+  "tobbieIIv2.shakeHead|block": "hristu höfuð %time| sinnum",
   "tobbieIIv2.stopRotation|block": "stöðva snúning",
   "tobbieIIv2.stopWalk|block": "stöðva hreyfingu",
   "tobbieIIv2.walkTime|block": "hreyfðu þig %direction í %seconds sekúndur",

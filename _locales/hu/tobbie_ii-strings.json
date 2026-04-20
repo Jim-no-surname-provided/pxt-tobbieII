@@ -13,7 +13,7 @@
   "tobbieIIv2.isObstacle|block": "van akadály a(z) $side oldalon|| $sensitivity érzékenységgel",
   "tobbieIIv2.rotateTime|block": "fordulj %direction %seconds másodpercig",
   "tobbieIIv2.rotate|block": "fordulj %direction",
-  "tobbieIIv2.shake_head|block": "rázd a fejed %time| alkalommal",
+  "tobbieIIv2.shakeHead|block": "rázd a fejed %time| alkalommal",
   "tobbieIIv2.stopRotation|block": "forgás leállítása",
   "tobbieIIv2.stopWalk|block": "mozgás leállítása",
   "tobbieIIv2.walkTime|block": "menj %direction %seconds másodpercig",

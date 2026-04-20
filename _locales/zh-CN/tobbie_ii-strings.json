@@ -13,7 +13,7 @@
   "tobbieIIv2.isObstacle|block": "$side 有障碍物吗|| 灵敏度 $sensitivity",
   "tobbieIIv2.rotateTime|block": "向 %direction 旋转 %seconds 秒",
   "tobbieIIv2.rotate|block": "向 %direction 旋转",
-  "tobbieIIv2.shake_head|block": "摇头 %time| 次",
+  "tobbieIIv2.shakeHead|block": "摇头 %time| 次",
   "tobbieIIv2.stopRotation|block": "停止旋转",
   "tobbieIIv2.stopWalk|block": "停止移动",
   "tobbieIIv2.walkTime|block": "向 %direction 行走 %seconds 秒",

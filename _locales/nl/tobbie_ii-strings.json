@@ -13,7 +13,7 @@
   "tobbieIIv2.isObstacle|block": "is er een obstakel aan de $side|| met gevoeligheid $sensitivity",
   "tobbieIIv2.rotateTime|block": "draai %direction voor %seconds seconden",
   "tobbieIIv2.rotate|block": "draai %direction",
-  "tobbieIIv2.shake_head|block": "schud het hoofd %time| keer",
+  "tobbieIIv2.shakeHead|block": "schud het hoofd %time| keer",
   "tobbieIIv2.stopRotation|block": "stop draaien",
   "tobbieIIv2.stopWalk|block": "stop bewegen",
   "tobbieIIv2.walkTime|block": "loop %direction voor %seconds seconden",

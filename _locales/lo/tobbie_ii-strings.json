@@ -13,7 +13,7 @@
   "tobbieIIv2.isObstacle|block": "ມີສິ່ງກີດຂວາງທີ່ $side|| ດ້ວຍຄວາມໄວ $sensitivity",
   "tobbieIIv2.rotateTime|block": "ໝຸນ %direction %seconds ວິນາທີ",
   "tobbieIIv2.rotate|block": "ໝຸນ %direction",
-  "tobbieIIv2.shake_head|block": "ສັ່ນຫົວ %time| ເທື່ອ",
+  "tobbieIIv2.shakeHead|block": "ສັ່ນຫົວ %time| ເທື່ອ",
   "tobbieIIv2.stopRotation|block": "ຢຸດໝຸນ",
   "tobbieIIv2.stopWalk|block": "ຢຸດເຄື່ອນ",
   "tobbieIIv2.walkTime|block": "ເດີນ %direction %seconds ວິນາທີ",

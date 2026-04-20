@@ -13,7 +13,7 @@
   "tobbieIIv2.isObstacle|block": "finns det ett hinder på $side|| med känslighet $sensitivity",
   "tobbieIIv2.rotateTime|block": "rotera %direction i %seconds sekunder",
   "tobbieIIv2.rotate|block": "rotera %direction",
-  "tobbieIIv2.shake_head|block": "skaka huvudet %time| gånger",
+  "tobbieIIv2.shakeHead|block": "skaka huvudet %time| gånger",
   "tobbieIIv2.stopRotation|block": "stoppa rotation",
   "tobbieIIv2.stopWalk|block": "stoppa rörelse",
   "tobbieIIv2.walkTime|block": "gå %direction i %seconds sekunder",

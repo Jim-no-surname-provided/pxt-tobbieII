@@ -13,7 +13,7 @@
   "tobbieIIv2.isObstacle|block": "$side පැත්තේ බාධාවක් තිබේද|| සංවේදීතාව $sensitivity",
   "tobbieIIv2.rotateTime|block": "%direction ලෙස %seconds තත්පර හැරෙන්න",
   "tobbieIIv2.rotate|block": "%direction ලෙස හැරෙන්න",
-  "tobbieIIv2.shake_head|block": "හිස කම්පා %time| වර",
+  "tobbieIIv2.shakeHead|block": "හිස කම්පා %time| වර",
   "tobbieIIv2.stopRotation|block": "හැරීම නවත්වන්න",
   "tobbieIIv2.stopWalk|block": "චලනය නවත්වන්න",
   "tobbieIIv2.walkTime|block": "%direction ලෙස %seconds තත්පර ගමන් කරන්න",

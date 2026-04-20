@@ -13,7 +13,7 @@
   "tobbieIIv2.isObstacle|block": "да ли постоји препрека на $side|| са осетљивошћу $sensitivity",
   "tobbieIIv2.rotateTime|block": "окрећи се %direction %seconds секунди",
   "tobbieIIv2.rotate|block": "окрећи се %direction",
-  "tobbieIIv2.shake_head|block": "климни главом %time| пута",
+  "tobbieIIv2.shakeHead|block": "климни главом %time| пута",
   "tobbieIIv2.stopRotation|block": "заустави окретање",
   "tobbieIIv2.stopWalk|block": "заустави кретање",
   "tobbieIIv2.walkTime|block": "крећи се %direction %seconds секунди",

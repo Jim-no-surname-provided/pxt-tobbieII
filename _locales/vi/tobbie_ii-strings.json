@@ -13,7 +13,7 @@
   "tobbieIIv2.isObstacle|block": "có vật cản ở $side không|| với độ nhạy $sensitivity",
   "tobbieIIv2.rotateTime|block": "xoay %direction trong %seconds giây",
   "tobbieIIv2.rotate|block": "xoay %direction",
-  "tobbieIIv2.shake_head|block": "lắc đầu %time| lần",
+  "tobbieIIv2.shakeHead|block": "lắc đầu %time| lần",
   "tobbieIIv2.stopRotation|block": "dừng xoay",
   "tobbieIIv2.stopWalk|block": "dừng di chuyển",
   "tobbieIIv2.walkTime|block": "đi %direction trong %seconds giây",

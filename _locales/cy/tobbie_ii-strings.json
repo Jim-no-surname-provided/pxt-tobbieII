@@ -13,7 +13,7 @@
   "tobbieIIv2.isObstacle|block": "a oes rhwystr ar $side|| gyda sensitifrwydd $sensitivity",
   "tobbieIIv2.rotateTime|block": "troi %direction am %seconds eiliad",
   "tobbieIIv2.rotate|block": "troi %direction",
-  "tobbieIIv2.shake_head|block": "ysgwyd pen %time| gwaith",
+  "tobbieIIv2.shakeHead|block": "ysgwyd pen %time| gwaith",
   "tobbieIIv2.stopRotation|block": "stopio troi",
   "tobbieIIv2.stopWalk|block": "stopio symud",
   "tobbieIIv2.walkTime|block": "cerdded %direction am %seconds eiliad",

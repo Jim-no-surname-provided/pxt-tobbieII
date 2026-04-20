@@ -13,7 +13,7 @@
   "tobbieIIv2.isObstacle|block": "gibt es ein Hindernis auf der Seite $side|| mit Empfindlichkeit $sensitivity",
   "tobbieIIv2.rotateTime|block": "%direction drehen für %seconds Sekunden",
   "tobbieIIv2.rotate|block": "%direction drehen",
-  "tobbieIIv2.shake_head|block": "%time| Mal den Kopf schütteln",
+  "tobbieIIv2.shakeHead|block": "%time| Mal den Kopf schütteln",
   "tobbieIIv2.stopRotation|block": "drehen stoppen",
   "tobbieIIv2.stopWalk|block": "bewegung stoppen",
   "tobbieIIv2.walkTime|block": "%direction gehen für %seconds Sekunden",

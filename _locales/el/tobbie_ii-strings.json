@@ -13,7 +13,7 @@
   "tobbieIIv2.isObstacle|block": "υπάρχει εμπόδιο στο $side|| με ευαισθησία $sensitivity",
   "tobbieIIv2.rotateTime|block": "περιστροφή προς %direction για %seconds δευτερόλεπτα",
   "tobbieIIv2.rotate|block": "περιστροφή προς %direction",
-  "tobbieIIv2.shake_head|block": "κούνησε το κεφάλι %time| φορές",
+  "tobbieIIv2.shakeHead|block": "κούνησε το κεφάλι %time| φορές",
   "tobbieIIv2.stopRotation|block": "σταμάτα την περιστροφή",
   "tobbieIIv2.stopWalk|block": "σταμάτα την κίνηση",
   "tobbieIIv2.walkTime|block": "περπάτησε %direction για %seconds δευτερόλεπτα",

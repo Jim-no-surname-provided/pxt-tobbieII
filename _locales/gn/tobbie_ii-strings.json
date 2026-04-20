@@ -13,7 +13,7 @@
   "tobbieIIv2.isObstacle|block": "oĩpa peteĩ mba'e ojokóva $side|| rehe $sensitivity rehe",
   "tobbieIIv2.rotateTime|block": "ojere %direction %seconds segúndo",
   "tobbieIIv2.rotate|block": "ojere %direction",
-  "tobbieIIv2.shake_head|block": "ombogua iñakã %time| jey",
+  "tobbieIIv2.shakeHead|block": "ombogua iñakã %time| jey",
   "tobbieIIv2.stopRotation|block": "oheja ojere",
   "tobbieIIv2.stopWalk|block": "oheja oku'e",
   "tobbieIIv2.walkTime|block": "oku'e %direction %seconds segúndo",

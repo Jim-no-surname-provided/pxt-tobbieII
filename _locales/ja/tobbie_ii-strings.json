@@ -13,7 +13,7 @@
   "tobbieIIv2.isObstacle|block": "$side に障害物はありますか|| 感度 $sensitivity",
   "tobbieIIv2.rotateTime|block": "%direction に %seconds 秒回転する",
   "tobbieIIv2.rotate|block": "%direction に回転する",
-  "tobbieIIv2.shake_head|block": "%time| 回頭を振る",
+  "tobbieIIv2.shakeHead|block": "%time| 回頭を振る",
   "tobbieIIv2.stopRotation|block": "回転を止める",
   "tobbieIIv2.stopWalk|block": "動きを止める",
   "tobbieIIv2.walkTime|block": "%direction に %seconds 秒歩く",

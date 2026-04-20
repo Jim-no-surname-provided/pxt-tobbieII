@@ -13,7 +13,7 @@
   "tobbieIIv2.isObstacle|block": "onko $side puolella este|| herkkyydellä $sensitivity",
   "tobbieIIv2.rotateTime|block": "käänny %direction %seconds sekunnin ajan",
   "tobbieIIv2.rotate|block": "käänny %direction",
-  "tobbieIIv2.shake_head|block": "ravista päätä %time| kertaa",
+  "tobbieIIv2.shakeHead|block": "ravista päätä %time| kertaa",
   "tobbieIIv2.stopRotation|block": "lopeta kääntyminen",
   "tobbieIIv2.stopWalk|block": "lopeta liikkuminen",
   "tobbieIIv2.walkTime|block": "liiku %direction %seconds sekunnin ajan",
