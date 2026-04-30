@@ -58,6 +58,7 @@ namespace tobbieIIv2 {
     //% block="%sensor IR sensor value "
     //% group="Infrared Sensor"
     //% blockGap=3 weight=1 
+    //% advanced=true
     export function infraredValue(side: IRSide): number {
         if (!hasBattery()) {
             return 0
@@ -97,6 +98,7 @@ namespace tobbieIIv2 {
     //% group="Infrared Sensor"
     //% sensitivity.defl=tobbieIIv2.Sensitivity.Medium
     //% blockGap=3 weight=0
+    //% advanced=true
     export function isObstacle(side: IRSide, sensitivity: Sensitivity = Sensitivity.Medium): boolean {
         return infraredValue(side) > sensitivity && hasBattery()
     }
@@ -222,8 +224,8 @@ namespace tobbieIIv2 {
     //% blockId="tobbieIIv2-stamp"
     //% block="stamp %time| times"
     //% time.min=1 time.max=100
-    //% blockGap=3 weight=4
-    //% advanced=true
+    //% blockGap=3 weight=10
+    //% advanced=false
     export function stamp(times: number): void {
         for (let i = 0; i < times; i++) {
             forward();
@@ -240,8 +242,8 @@ namespace tobbieIIv2 {
     //% blockId="tobbieIIv2-shakeHead"
     //% block="shake head %time| times"
     //% time.min=1 time.max=100
-    //% blockGap=3 weight=3
-    //% advanced=true
+    //% blockGap=3 weight=9
+    //% advanced=false
     export function shakeHead(times: number): void {
         for (let i = 0; i < times; i++) {
             leftward();
