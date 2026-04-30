@@ -23,5 +23,8 @@
   "{id:group}Infrared Sensor": "IR-sensor",
   "{id:group}Rotating": "Rotasjon",
   "{id:group}Walking": "Gå",
-  "tobbieIIv2.stamp|block": "stamp %time| gonger"
+  "tobbieIIv2.stamp|block": "stamp %time| gonger",
+  "tobbieIIv2.buzz|block": "summ",
+  "tobbieIIv2.setBuzzer|block": "set summer %on",
+  "{id:group}Buzzer": "Summer"
 }

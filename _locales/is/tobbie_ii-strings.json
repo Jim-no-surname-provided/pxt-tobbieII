@@ -23,5 +23,8 @@
   "{id:group}Infrared Sensor": "IR skynjari",
   "{id:group}Rotating": "Snúningur",
   "{id:group}Walking": "Hreyfing",
-  "tobbieIIv2.stamp|block": "stappaðu %time| sinnum"
+  "tobbieIIv2.stamp|block": "stappaðu %time| sinnum",
+  "tobbieIIv2.buzz|block": "suða",
+  "tobbieIIv2.setBuzzer|block": "stilla hljóðgjafa %on",
+  "{id:group}Buzzer": "Hljóðgjafi"
 }

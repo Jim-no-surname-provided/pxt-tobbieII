@@ -23,5 +23,8 @@
   "{id:group}Infrared Sensor": "红外传感器",
   "{id:group}Rotating": "旋转",
   "{id:group}Walking": "行走",
-  "tobbieIIv2.stamp|block": "跺脚 %time| 次"
+  "tobbieIIv2.stamp|block": "跺脚 %time| 次",
+  "tobbieIIv2.buzz|block": "蜂鸣",
+  "tobbieIIv2.setBuzzer|block": "设置蜂鸣器 %on",
+  "{id:group}Buzzer": "蜂鸣器"
 }

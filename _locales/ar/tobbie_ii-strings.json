@@ -23,5 +23,8 @@
   "{id:group}Infrared Sensor": "مستشعر IR",
   "{id:group}Rotating": "الدوران",
   "{id:group}Walking": "الحركة",
-  "tobbieIIv2.stamp|block": "اضرب الأرض بقدمك %time| مرات"
+  "tobbieIIv2.stamp|block": "اضرب الأرض بقدمك %time| مرات",
+  "tobbieIIv2.buzz|block": "أصدر طنينًا",
+  "tobbieIIv2.setBuzzer|block": "اضبط الطنان %on",
+  "{id:group}Buzzer": "الطنان"
 }

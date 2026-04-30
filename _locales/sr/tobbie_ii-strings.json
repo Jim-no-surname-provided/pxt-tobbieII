@@ -23,5 +23,8 @@
   "{id:group}Infrared Sensor": "IR сензор",
   "{id:group}Rotating": "Окретање",
   "{id:group}Walking": "Кретање",
-  "tobbieIIv2.stamp|block": "лупни ногом %time| пута"
+  "tobbieIIv2.stamp|block": "лупни ногом %time| пута",
+  "tobbieIIv2.buzz|block": "зуји",
+  "tobbieIIv2.setBuzzer|block": "подеси зујалицу %on",
+  "{id:group}Buzzer": "Зујалица"
 }

@@ -23,5 +23,8 @@
   "{id:group}Infrared Sensor": "IR-sensor",
   "{id:group}Rotating": "Draaien",
   "{id:group}Walking": "Lopen",
-  "tobbieIIv2.stamp|block": "%time| keer stampen"
+  "tobbieIIv2.stamp|block": "%time| keer stampen",
+  "tobbieIIv2.buzz|block": "zoem",
+  "tobbieIIv2.setBuzzer|block": "zet zoemer op %on",
+  "{id:group}Buzzer": "Zoemer"
 }

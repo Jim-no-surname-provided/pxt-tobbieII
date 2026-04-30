@@ -23,5 +23,8 @@
   "{id:group}Infrared Sensor": "IR සංවේදක",
   "{id:group}Rotating": "හැරීම",
   "{id:group}Walking": "ගමන්",
-  "tobbieIIv2.stamp|block": "පාද ගසන්න %time| වර"
+  "tobbieIIv2.stamp|block": "පාද ගසන්න %time| වර",
+  "tobbieIIv2.buzz|block": "නාද කරන්න",
+  "tobbieIIv2.setBuzzer|block": "බසරය %on ලෙස සකසන්න",
+  "{id:group}Buzzer": "බසරය"
 }

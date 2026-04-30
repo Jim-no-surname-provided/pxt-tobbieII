@@ -23,5 +23,8 @@
   "{id:group}Infrared Sensor": "IR sensor",
   "{id:group}Rotating": "ໝຸນ",
   "{id:group}Walking": "ເດີນ",
-  "tobbieIIv2.stamp|block": "ຢ່ຳຕີນ %time| ເທື່ອ"
+  "tobbieIIv2.stamp|block": "ຢ່ຳຕີນ %time| ເທື່ອ",
+  "tobbieIIv2.buzz|block": "ໃຫ້ສຽງດັງ",
+  "tobbieIIv2.setBuzzer|block": "ຕັ້ງບັດເຊີ %on",
+  "{id:group}Buzzer": "ບັດເຊີ"
 }

@@ -23,5 +23,8 @@
   "{id:group}Infrared Sensor": "ИК датчик",
   "{id:group}Rotating": "Поворот",
   "{id:group}Walking": "Ходьба",
-  "tobbieIIv2.stamp|block": "топни %time| раз"
+  "tobbieIIv2.stamp|block": "топни %time| раз",
+  "tobbieIIv2.buzz|block": "жужжать",
+  "tobbieIIv2.setBuzzer|block": "установить зуммер %on",
+  "{id:group}Buzzer": "Зуммер"
 }

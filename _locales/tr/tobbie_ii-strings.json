@@ -23,5 +23,8 @@
   "{id:group}Infrared Sensor": "IR sensörü",
   "{id:group}Rotating": "Dönme",
   "{id:group}Walking": "Yürüme",
-  "tobbieIIv2.stamp|block": "%time| kez ayağını yere vur"
+  "tobbieIIv2.stamp|block": "%time| kez ayağını yere vur",
+  "tobbieIIv2.buzz|block": "vızılda",
+  "tobbieIIv2.setBuzzer|block": "zili %on olarak ayarla",
+  "{id:group}Buzzer": "Zil"
 }

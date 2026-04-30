@@ -23,5 +23,8 @@
   "{id:group}Infrared Sensor": "IR senzor",
   "{id:group}Rotating": "Otáčanie",
   "{id:group}Walking": "Chôdza",
-  "tobbieIIv2.stamp|block": "dupni %time| krát"
+  "tobbieIIv2.stamp|block": "dupni %time| krát",
+  "tobbieIIv2.buzz|block": "zabzuč",
+  "tobbieIIv2.setBuzzer|block": "nastav bzučiak %on",
+  "{id:group}Buzzer": "Bzučiak"
 }

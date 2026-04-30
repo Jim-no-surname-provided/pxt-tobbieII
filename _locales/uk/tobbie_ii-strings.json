@@ -23,5 +23,8 @@
   "{id:group}Infrared Sensor": "ІЧ датчик",
   "{id:group}Rotating": "Обертання",
   "{id:group}Walking": "Ходьба",
-  "tobbieIIv2.stamp|block": "тупни %time| разів"
+  "tobbieIIv2.stamp|block": "тупни %time| разів",
+  "tobbieIIv2.buzz|block": "дзижчати",
+  "tobbieIIv2.setBuzzer|block": "установити зумер %on",
+  "{id:group}Buzzer": "Зумер"
 }

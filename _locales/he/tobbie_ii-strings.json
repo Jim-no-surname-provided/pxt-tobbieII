@@ -23,5 +23,8 @@
   "{id:group}Infrared Sensor": "חיישן IR",
   "{id:group}Rotating": "סיבוב",
   "{id:group}Walking": "הליכה",
-  "tobbieIIv2.stamp|block": "רקע ברגל %time| פעמים"
+  "tobbieIIv2.stamp|block": "רקע ברגל %time| פעמים",
+  "tobbieIIv2.buzz|block": "זמזם",
+  "tobbieIIv2.setBuzzer|block": "הגדר זמזם %on",
+  "{id:group}Buzzer": "זמזם"
 }

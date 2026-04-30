@@ -23,5 +23,8 @@
   "{id:group}Infrared Sensor": "적외선 센서",
   "{id:group}Rotating": "회전",
   "{id:group}Walking": "걷기",
-  "tobbieIIv2.stamp|block": "%time| 번 발 구르기"
+  "tobbieIIv2.stamp|block": "%time| 번 발 구르기",
+  "tobbieIIv2.buzz|block": "부저 울리기",
+  "tobbieIIv2.setBuzzer|block": "부저를 %on 로 설정",
+  "{id:group}Buzzer": "부저"
 }

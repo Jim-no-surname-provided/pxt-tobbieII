@@ -23,5 +23,8 @@
   "{id:group}Infrared Sensor": "Αισθητήρας IR",
   "{id:group}Rotating": "Περιστροφή",
   "{id:group}Walking": "Περπάτημα",
-  "tobbieIIv2.stamp|block": "χτύπα το πόδι %time| φορές"
+  "tobbieIIv2.stamp|block": "χτύπα το πόδι %time| φορές",
+  "tobbieIIv2.buzz|block": "βόμβησε",
+  "tobbieIIv2.setBuzzer|block": "ρύθμισε τον βομβητή %on",
+  "{id:group}Buzzer": "Βομβητής"
 }

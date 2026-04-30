@@ -23,5 +23,8 @@
   "{id:group}Infrared Sensor": "Sensor infrarrojo",
   "{id:group}Rotating": "Giro",
   "{id:group}Walking": "Caminar",
-  "tobbieIIv2.stamp|block": "pisa fuerte %time| veces"
+  "tobbieIIv2.stamp|block": "pisa fuerte %time| veces",
+  "tobbieIIv2.buzz|block": "zumbar",
+  "tobbieIIv2.setBuzzer|block": "poner zumbador en %on",
+  "{id:group}Buzzer": "Zumbador"
 }

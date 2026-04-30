@@ -23,5 +23,8 @@
   "{id:group}Infrared Sensor": "Sensore infrarosso",
   "{id:group}Rotating": "Rotazione",
   "{id:group}Walking": "Camminare",
-  "tobbieIIv2.stamp|block": "batti il piede %time| volte"
+  "tobbieIIv2.stamp|block": "batti il piede %time| volte",
+  "tobbieIIv2.buzz|block": "ronza",
+  "tobbieIIv2.setBuzzer|block": "imposta cicalino %on",
+  "{id:group}Buzzer": "Cicalino"
 }

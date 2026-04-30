@@ -23,5 +23,8 @@
   "{id:group}Infrared Sensor": "Czujnik IR",
   "{id:group}Rotating": "Obrót",
   "{id:group}Walking": "Chodzenie",
-  "tobbieIIv2.stamp|block": "tupnij %time| razy"
+  "tobbieIIv2.stamp|block": "tupnij %time| razy",
+  "tobbieIIv2.buzz|block": "zabzycz",
+  "tobbieIIv2.setBuzzer|block": "ustaw brzęczyk %on",
+  "{id:group}Buzzer": "Brzęczyk"
 }

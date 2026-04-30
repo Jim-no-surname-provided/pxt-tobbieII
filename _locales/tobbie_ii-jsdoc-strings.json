@@ -1,4 +1,5 @@
 {
+  "tobbieIIv2.buzz": "Set the buzzer inside the helmet on and then off to produce a short buzz.",
   "tobbieIIv2.dance": "Tobbie-II repeats the dance for for a certain number of times.",
   "tobbieIIv2.dance|param|times": "the amount of times to dance; eg. 5",
   "tobbieIIv2.infraredValue": "Read the value sensed by the right side of the infrared sensor.",
@@ -9,6 +10,8 @@
   "tobbieIIv2.rotateTime": "Start rotating to the right or to the left\r\r\n@param [seconds=1.5] Time in seconds Tobbie should Rotate for",
   "tobbieIIv2.rotateTime|param|direction": "Right or Left",
   "tobbieIIv2.rotate|param|direction": "Right or Left",
+  "tobbieIIv2.setBuzzer": "Set the buzzer to 1 or 0, to produce the starting of a buzz, or the end.",
+  "tobbieIIv2.setBuzzer|param|on": "whether to set the buzzer on or off",
   "tobbieIIv2.shakeHead": "Tobbie-II shakes his head for a certain number of times.",
   "tobbieIIv2.shakeHead|param|times": "the amount of times to shake the head; eg. 5",
   "tobbieIIv2.stamp": "Tobbie-II stamps his foot for a certain number of times.",

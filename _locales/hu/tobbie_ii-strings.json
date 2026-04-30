@@ -23,5 +23,8 @@
   "{id:group}Infrared Sensor": "IR érzékelő",
   "{id:group}Rotating": "Forgás",
   "{id:group}Walking": "Mozgás",
-  "tobbieIIv2.stamp|block": "dobbants %time| alkalommal"
+  "tobbieIIv2.stamp|block": "dobbants %time| alkalommal",
+  "tobbieIIv2.buzz|block": "zümmögj",
+  "tobbieIIv2.setBuzzer|block": "zümmögő beállítása %on",
+  "{id:group}Buzzer": "Zümmögő"
 }

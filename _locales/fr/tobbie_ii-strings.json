@@ -23,5 +23,8 @@
   "{id:group}Infrared Sensor": "Capteur infrarouge",
   "{id:group}Rotating": "Rotation",
   "{id:group}Walking": "Marche",
-  "tobbieIIv2.stamp|block": "taper du pied %time| fois"
+  "tobbieIIv2.stamp|block": "taper du pied %time| fois",
+  "tobbieIIv2.buzz|block": "bourdonner",
+  "tobbieIIv2.setBuzzer|block": "régler le buzzer sur %on",
+  "{id:group}Buzzer": "Buzzer"
 }

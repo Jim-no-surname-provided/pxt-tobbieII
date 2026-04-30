@@ -23,5 +23,8 @@
   "{id:group}Infrared Sensor": "Sensor IR",
   "{id:group}Rotating": "Rotação",
   "{id:group}Walking": "Andar",
-  "tobbieIIv2.stamp|block": "bate o pé %time| vezes"
+  "tobbieIIv2.stamp|block": "bate o pé %time| vezes",
+  "tobbieIIv2.buzz|block": "zumbir",
+  "tobbieIIv2.setBuzzer|block": "definir besouro como %on",
+  "{id:group}Buzzer": "Besouro"
 }

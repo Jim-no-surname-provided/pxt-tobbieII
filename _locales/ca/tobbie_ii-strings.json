@@ -23,5 +23,8 @@
   "{id:group}Infrared Sensor": "Sensor IR",
   "{id:group}Rotating": "Rotació",
   "{id:group}Walking": "Caminar",
-  "tobbieIIv2.stamp|block": "pica de peus %time| vegades"
+  "tobbieIIv2.stamp|block": "pica de peus %time| vegades",
+  "tobbieIIv2.buzz|block": "fes brunzit",
+  "tobbieIIv2.setBuzzer|block": "posa el brunzidor a %on",
+  "{id:group}Buzzer": "Brunzidor"
 }

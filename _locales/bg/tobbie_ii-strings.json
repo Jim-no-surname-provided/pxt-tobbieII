@@ -23,5 +23,8 @@
   "{id:group}Infrared Sensor": "IR сензор",
   "{id:group}Rotating": "Въртене",
   "{id:group}Walking": "Движение",
-  "tobbieIIv2.stamp|block": "тропни %time| пъти"
+  "tobbieIIv2.stamp|block": "тропни %time| пъти",
+  "tobbieIIv2.buzz|block": "бръмни",
+  "tobbieIIv2.setBuzzer|block": "задай зумер %on",
+  "{id:group}Buzzer": "Зумер"
 }

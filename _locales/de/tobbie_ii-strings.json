@@ -8,7 +8,7 @@
   "tobbieIIv2.Sensitivity.High|block": "hoch",
   "tobbieIIv2.Sensitivity.Low|block": "niedrig",
   "tobbieIIv2.Sensitivity.Medium|block": "mittel",
-  "tobbieIIv2.dance|block": "%time| Mal tanzen",
+  "tobbieIIv2.dance|block": "%time| Mal ",
   "tobbieIIv2.infraredValue|block": "ir-Sensorwert %sensor ",
   "tobbieIIv2.isObstacle|block": "gibt es ein Hindernis auf der Seite $side|| mit Empfindlichkeit $sensitivity",
   "tobbieIIv2.rotateTime|block": "%direction drehen für %seconds Sekunden",
@@ -23,5 +23,8 @@
   "{id:group}Infrared Sensor": "Infrarotsensor",
   "{id:group}Rotating": "Drehen",
   "{id:group}Walking": "Gehen",
-  "tobbieIIv2.stamp|block": "%time| Mal stampfen"
+  "tobbieIIv2.stamp|block": "%time| Mal stampfen",
+  "tobbieIIv2.buzz|block": "summen",
+  "tobbieIIv2.setBuzzer|block": "Summer auf %on setzen",
+  "{id:group}Buzzer": "Summer"
 }

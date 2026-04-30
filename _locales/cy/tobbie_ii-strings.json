@@ -23,5 +23,8 @@
   "{id:group}Infrared Sensor": "Synhwyrydd IR",
   "{id:group}Rotating": "Troi",
   "{id:group}Walking": "Cerdded",
-  "tobbieIIv2.stamp|block": "stampio %time| gwaith"
+  "tobbieIIv2.stamp|block": "stampio %time| gwaith",
+  "tobbieIIv2.buzz|block": "swnian",
+  "tobbieIIv2.setBuzzer|block": "gosod swnyn %on",
+  "{id:group}Buzzer": "Swnyn"
 }

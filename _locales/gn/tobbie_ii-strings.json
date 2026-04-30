@@ -23,5 +23,8 @@
   "{id:group}Infrared Sensor": "Sensor IR",
   "{id:group}Rotating": "Jere",
   "{id:group}Walking": "Ku'e",
-  "tobbieIIv2.stamp|block": "epyrũ hatã %time| jey"
+  "tobbieIIv2.stamp|block": "epyrũ hatã %time| jey",
+  "tobbieIIv2.buzz|block": "embopu",
+  "tobbieIIv2.setBuzzer|block": "emoĩ buzzer %on",
+  "{id:group}Buzzer": "Buzzer"
 }

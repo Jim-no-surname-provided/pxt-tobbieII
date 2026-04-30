@@ -23,5 +23,8 @@
   "{id:group}Infrared Sensor": "赤外線センサー",
   "{id:group}Rotating": "回転",
   "{id:group}Walking": "歩行",
-  "tobbieIIv2.stamp|block": "%time| 回足踏みする"
+  "tobbieIIv2.stamp|block": "%time| 回足踏みする",
+  "tobbieIIv2.buzz|block": "ブザーを鳴らす",
+  "tobbieIIv2.setBuzzer|block": "ブザーを %on にする",
+  "{id:group}Buzzer": "ブザー"
 }

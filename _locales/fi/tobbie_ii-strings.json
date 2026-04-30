@@ -23,5 +23,8 @@
   "{id:group}Infrared Sensor": "IR-anturi",
   "{id:group}Rotating": "Kääntyminen",
   "{id:group}Walking": "Liikkuminen",
-  "tobbieIIv2.stamp|block": "tömisytä %time| kertaa"
+  "tobbieIIv2.stamp|block": "tömisytä %time| kertaa",
+  "tobbieIIv2.buzz|block": "surise",
+  "tobbieIIv2.setBuzzer|block": "aseta summeri %on",
+  "{id:group}Buzzer": "Summeri"
 }

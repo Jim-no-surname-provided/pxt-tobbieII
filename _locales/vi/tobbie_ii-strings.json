@@ -23,5 +23,8 @@
   "{id:group}Infrared Sensor": "Cảm biến IR",
   "{id:group}Rotating": "Xoay",
   "{id:group}Walking": "Di chuyển",
-  "tobbieIIv2.stamp|block": "dậm chân %time| lần"
+  "tobbieIIv2.stamp|block": "dậm chân %time| lần",
+  "tobbieIIv2.buzz|block": "rè",
+  "tobbieIIv2.setBuzzer|block": "đặt còi báo %on",
+  "{id:group}Buzzer": "Còi báo"
 }
